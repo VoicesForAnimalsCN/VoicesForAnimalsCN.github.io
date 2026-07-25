@@ -16,9 +16,9 @@
   <title>Voices For Animals CN</title>
 
   <style>
-    /* -----------------------------------
+    /* =========================
        Basic settings
-    ----------------------------------- */
+    ========================= */
 
     * {
       box-sizing: border-box;
@@ -48,9 +48,9 @@
       scroll-margin-top: 90px;
     }
 
-    /* -----------------------------------
+    /* =========================
        Navigation
-    ----------------------------------- */
+    ========================= */
 
     .site-nav {
       position: absolute;
@@ -68,7 +68,7 @@
 
       background:
         linear-gradient(
-          rgba(0, 0, 0, 0.72),
+          rgba(0, 0, 0, 0.75),
           rgba(0, 0, 0, 0)
         );
     }
@@ -99,9 +99,9 @@
       color: #e06363;
     }
 
-    /* -----------------------------------
+    /* =========================
        Hero
-    ----------------------------------- */
+    ========================= */
 
     .hero {
       position: relative;
@@ -113,7 +113,6 @@
       justify-content: center;
 
       padding: 130px 24px 90px;
-
       text-align: center;
 
       background:
@@ -131,7 +130,6 @@
 
     .hero h1 {
       margin: 0;
-
       font-size: clamp(46px, 8vw, 96px);
       line-height: 0.98;
       letter-spacing: 2px;
@@ -141,14 +139,12 @@
     .hero-subtitle {
       max-width: 780px;
       margin: 26px auto 0;
-
       color: #e0e0e0;
       font-size: clamp(18px, 2.4vw, 26px);
     }
 
     .hero-button {
       display: inline-block;
-
       margin-top: 36px;
       padding: 13px 24px;
 
@@ -171,9 +167,9 @@
       color: #111;
     }
 
-    /* -----------------------------------
+    /* =========================
        Introduction
-    ----------------------------------- */
+    ========================= */
 
     .intro {
       max-width: 860px;
@@ -185,7 +181,6 @@
     .intro h2,
     .section-heading h2 {
       margin: 0 0 18px;
-
       font-size: clamp(31px, 5vw, 45px);
       line-height: 1.2;
     }
@@ -193,21 +188,20 @@
     .intro p,
     .section-heading p {
       margin: 0;
-
       color: #bdbdbd;
       font-size: 18px;
     }
 
-    /* -----------------------------------
+    /* =========================
        Cases timeline
-    ----------------------------------- */
+    ========================= */
 
     .cases-section {
-      padding: 55px 24px 100px;
+      padding: 55px 24px 105px;
     }
 
     .cases-inner {
-      max-width: 1080px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
@@ -222,13 +216,11 @@
       justify-content: center;
       flex-wrap: wrap;
       gap: 12px;
-
       margin-bottom: 70px;
     }
 
     .year-navigation a {
       padding: 9px 15px;
-
       border: 1px solid #414141;
 
       color: #d5d5d5;
@@ -251,13 +243,12 @@
 
     .timeline {
       position: relative;
-      max-width: 920px;
+      max-width: 960px;
       margin: 0 auto;
     }
 
     .timeline::before {
       content: "";
-
       position: absolute;
       top: 0;
       bottom: 0;
@@ -267,17 +258,19 @@
       background: #393939;
     }
 
-    .timeline-item {
+    /* One year or period */
+
+    .timeline-group {
       position: relative;
 
       display: grid;
       grid-template-columns: 108px 1fr;
       gap: 55px;
 
-      margin-bottom: 58px;
+      margin-bottom: 65px;
     }
 
-    .timeline-item:last-child {
+    .timeline-group:last-child {
       margin-bottom: 0;
     }
 
@@ -288,6 +281,7 @@
       font-size: 15px;
       font-weight: 700;
       letter-spacing: 1px;
+      line-height: 1.35;
       text-align: right;
       text-transform: uppercase;
     }
@@ -306,6 +300,13 @@
       background: #dc5959;
       box-shadow: 0 0 0 2px #dc5959;
     }
+
+    .timeline-cases {
+      display: grid;
+      gap: 24px;
+    }
+
+    /* Case card */
 
     .timeline-card {
       display: grid;
@@ -354,9 +355,23 @@
       text-transform: uppercase;
     }
 
+    .case-status {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 7px;
+
+      border: 1px solid #714141;
+
+      color: #ef8a8a;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.7px;
+      vertical-align: middle;
+      text-transform: uppercase;
+    }
+
     .timeline-card h3 {
       margin: 7px 0 12px;
-
       font-size: 28px;
       line-height: 1.25;
     }
@@ -372,9 +387,9 @@
       font-weight: 700;
     }
 
-    /* -----------------------------------
+    /* =========================
        Information sections
-    ----------------------------------- */
+    ========================= */
 
     .information-section {
       padding: 90px 24px;
@@ -394,13 +409,11 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
-
       margin-top: 45px;
     }
 
     .information-card {
       padding: 28px;
-
       border: 1px solid #333;
       background: #1d1d1d;
     }
@@ -434,9 +447,9 @@
       text-decoration: underline;
     }
 
-    /* -----------------------------------
+    /* =========================
        About
-    ----------------------------------- */
+    ========================= */
 
     .about-section {
       padding: 90px 24px;
@@ -461,13 +474,12 @@
       font-size: 17px;
     }
 
-    /* -----------------------------------
+    /* =========================
        Footer
-    ----------------------------------- */
+    ========================= */
 
     footer {
       padding: 35px 24px;
-
       border-top: 1px solid #333;
 
       color: #8e8e8e;
@@ -475,9 +487,9 @@
       text-align: center;
     }
 
-    /* -----------------------------------
+    /* =========================
        Tablet
-    ----------------------------------- */
+    ========================= */
 
     @media (max-width: 900px) {
       .information-grid {
@@ -489,9 +501,9 @@
       }
     }
 
-    /* -----------------------------------
+    /* =========================
        Mobile
-    ----------------------------------- */
+    ========================= */
 
     @media (max-width: 720px) {
       .site-nav {
@@ -501,7 +513,6 @@
         flex-direction: column;
 
         padding: 20px 22px;
-
         background: #111;
       }
 
@@ -518,7 +529,7 @@
         left: 9px;
       }
 
-      .timeline-item {
+      .timeline-group {
         display: block;
         margin-left: 38px;
       }
@@ -573,6 +584,7 @@
 
   <header class="hero" id="home">
     <div class="hero-content">
+
       <h1>Voices For Animals CN</h1>
 
       <p class="hero-subtitle">
@@ -584,6 +596,7 @@
       <a class="hero-button" href="#cases">
         Explore the Cases
       </a>
+
     </div>
   </header>
 
@@ -597,12 +610,12 @@
       <p>
         This independent archive collects publicly reported cases,
         historical records, media coverage, and legal resources.
-        The cases below are organized chronologically so readers can
-        explore how animal welfare concerns have developed over time.
+        Cases are organized chronologically, with continuing cases
+        grouped under the period in which they remain active.
       </p>
     </section>
 
-    <!-- Cases and timeline -->
+    <!-- Cases Timeline -->
 
     <section class="cases-section" id="cases">
       <div class="cases-inner">
@@ -611,8 +624,9 @@
           <h2>Cases Timeline</h2>
 
           <p>
-            Browse documented cases by year. Select a case to read
-            its background, public response, sources, and available updates.
+            Browse documented cases by year and period.
+            Select a case to read its background, public response,
+            sources, and available updates.
           </p>
         </div>
 
@@ -620,175 +634,232 @@
           <a href="#case-2008">2008</a>
           <a href="#case-2021">2021</a>
           <a href="#case-2022">2022</a>
-          <a href="#case-ongoing">Ongoing</a>
-          <a href="#case-2026">2026</a>
+          <a href="#case-2026-present">2026–Present</a>
         </nav>
 
         <div class="timeline">
 
-          <!-- 2008: Xiaohua -->
+          <!-- 2008 -->
 
-          <article class="timeline-item" id="case-2008">
-            <div class="timeline-year">2008</div>
+          <section class="timeline-group" id="case-2008">
 
-            <span class="timeline-dot"></span>
-
-            <a class="timeline-card" href="xiaohua.html">
-              <img
-                src="images/xiaohua.JPG"
-                alt="Xiaohua"
-              >
-
-              <div class="timeline-card-content">
-                <span class="case-location">
-                  Sichuan
-                </span>
-
-                <h3>Xiaohua</h3>
-
-                <p>
-                  Xiaohua became known through reports describing her
-                  unusual behavior before the Wenchuan earthquake and
-                  her later death during post-disaster animal control.
-                </p>
-
-                <span class="read-link">
-                  Read the case →
-                </span>
-              </div>
-            </a>
-          </article>
-
-          <!-- 2021: Shangrao Corgi -->
-
-          <article class="timeline-item" id="case-2021">
-            <div class="timeline-year">2021</div>
+            <div class="timeline-year">
+              2008
+            </div>
 
             <span class="timeline-dot"></span>
 
-            <a class="timeline-card" href="shangrao-corgi.html">
-              <img
-                src="images/shangrao-corgi.jpg"
-                alt="The Shangrao Corgi"
-              >
+            <div class="timeline-cases">
 
-              <div class="timeline-card-content">
-                <span class="case-location">
-                  Shangrao, Jiangxi
-                </span>
+              <a class="timeline-card" href="xiaohua.html">
 
-                <h3>The Shangrao Corgi</h3>
+                <img
+                  src="images/xiaohua.JPG"
+                  alt="Xiaohua"
+                >
 
-                <p>
-                  A pet dog was killed inside its home while its owner
-                  was in centralized COVID quarantine, prompting
-                  widespread public anger and an official response.
-                </p>
+                <div class="timeline-card-content">
 
-                <span class="read-link">
-                  Read the case →
-                </span>
-              </div>
-            </a>
-          </article>
+                  <span class="case-location">
+                    Sichuan
+                  </span>
 
-          <!-- 2022: Snowball -->
+                  <h3>Xiaohua</h3>
 
-          <article class="timeline-item" id="case-2022">
-            <div class="timeline-year">2022</div>
+                  <p>
+                    Xiaohua became known through reports describing
+                    her unusual behavior before the Wenchuan earthquake
+                    and her later death during post-disaster animal control.
+                  </p>
 
-            <span class="timeline-dot"></span>
+                  <span class="read-link">
+                    Read the case →
+                  </span>
 
-            <a class="timeline-card" href="snowball.html">
-              <img
-                src="images/snowball.JPG"
-                alt="Snowball the Samoyed"
-              >
+                </div>
+              </a>
 
-              <div class="timeline-card-content">
-                <span class="case-location">
-                  COVID-19 period
-                </span>
+            </div>
+          </section>
 
-                <h3>Snowball</h3>
+          <!-- 2021 -->
 
-                <p>
-                  A Samoyed was reportedly killed during residential
-                  disinfection while its owner was away in quarantine.
-                </p>
+          <section class="timeline-group" id="case-2021">
 
-                <span class="read-link">
-                  Read the case →
-                </span>
-              </div>
-            </a>
-          </article>
-
-          <!-- Ongoing: Cat transport cases -->
-
-          <article class="timeline-item" id="case-ongoing">
-            <div class="timeline-year">Ongoing</div>
+            <div class="timeline-year">
+              2021
+            </div>
 
             <span class="timeline-dot"></span>
 
-            <a class="timeline-card" href="cat-transport.html">
-              <img
-                src="images/cat-rescue.JPG"
-                alt="Cats involved in a rescue case"
+            <div class="timeline-cases">
+
+              <a
+                class="timeline-card"
+                href="shangrao-corgi.html"
               >
 
-              <div class="timeline-card-content">
-                <span class="case-location">
-                  Multiple locations
-                </span>
+                <img
+                  src="images/shangrao-corgi.jpg"
+                  alt="The Shangrao Corgi"
+                >
 
-                <h3>Cat Transport and Rescue Cases</h3>
+                <div class="timeline-card-content">
 
-                <p>
-                  Large-scale cat transportation incidents involving
-                  ownership, welfare, and intended destination have led
-                  to repeated rescue efforts and public concern.
-                </p>
+                  <span class="case-location">
+                    Shangrao, Jiangxi
+                  </span>
 
-                <span class="read-link">
-                  Read the cases →
-                </span>
-              </div>
-            </a>
-          </article>
+                  <h3>The Shangrao Corgi</h3>
 
-          <!-- 2026: Wangwang -->
+                  <p>
+                    A pet dog was killed inside its home while its owner
+                    was in centralized COVID quarantine, prompting
+                    widespread public anger and an official response.
+                  </p>
 
-          <article class="timeline-item" id="case-2026">
-            <div class="timeline-year">2026</div>
+                  <span class="read-link">
+                    Read the case →
+                  </span>
+
+                </div>
+              </a>
+
+            </div>
+          </section>
+
+          <!-- 2022 -->
+
+          <section class="timeline-group" id="case-2022">
+
+            <div class="timeline-year">
+              2022
+            </div>
 
             <span class="timeline-dot"></span>
 
-            <a class="timeline-card" href="wangwang.html">
-              <img
-                src="images/wangwang-family.JPG"
-                alt="Wangwang and her puppies"
+            <div class="timeline-cases">
+
+              <a class="timeline-card" href="snowball.html">
+
+                <img
+                  src="images/snowball.JPG"
+                  alt="Snowball the Samoyed"
+                >
+
+                <div class="timeline-card-content">
+
+                  <span class="case-location">
+                    COVID-19 Period
+                  </span>
+
+                  <h3>Snowball</h3>
+
+                  <p>
+                    A Samoyed was reportedly killed during residential
+                    disinfection while its owner was away in quarantine.
+                  </p>
+
+                  <span class="read-link">
+                    Read the case →
+                  </span>
+
+                </div>
+              </a>
+
+            </div>
+          </section>
+
+          <!-- 2026–Present -->
+
+          <section
+            class="timeline-group"
+            id="case-2026-present"
+          >
+
+            <div class="timeline-year">
+              2026<br>– Present
+            </div>
+
+            <span class="timeline-dot"></span>
+
+            <div class="timeline-cases">
+
+              <!-- Wangwang -->
+
+              <a class="timeline-card" href="wangwang.html">
+
+                <img
+                  src="images/wangwang-family.JPG"
+                  alt="Wangwang and her puppies"
+                >
+
+                <div class="timeline-card-content">
+
+                  <span class="case-location">
+                    Jieyang, Guangdong
+                  </span>
+
+                  <span class="case-status">
+                    Ongoing
+                  </span>
+
+                  <h3>Wangwang and Her Puppies</h3>
+
+                  <p>
+                    The deaths of a community mother dog and her puppies
+                    sparked widespread outrage and renewed calls for
+                    stronger legal protection for animals. Public discussion,
+                    media coverage, and advocacy efforts remain ongoing.
+                  </p>
+
+                  <span class="read-link">
+                    Read the case →
+                  </span>
+
+                </div>
+              </a>
+
+              <!-- Cat transport cases -->
+
+              <a
+                class="timeline-card"
+                href="cat-transport.html"
               >
 
-              <div class="timeline-card-content">
-                <span class="case-location">
-                  Jieyang, Guangdong
-                </span>
+                <img
+                  src="images/cat-rescue.JPG"
+                  alt="Cats involved in a rescue case"
+                >
 
-                <h3>Wangwang and Her Puppies</h3>
+                <div class="timeline-card-content">
 
-                <p>
-                  The deaths of a community mother dog and her puppies
-                  sparked widespread outrage and renewed calls for stronger
-                  legal protection for animals.
-                </p>
+                  <span class="case-location">
+                    Multiple Locations
+                  </span>
 
-                <span class="read-link">
-                  Read the case →
-                </span>
-              </div>
-            </a>
-          </article>
+                  <span class="case-status">
+                    Ongoing
+                  </span>
+
+                  <h3>Cat Transport and Rescue Cases</h3>
+
+                  <p>
+                    Large-scale cat transportation incidents involving
+                    questions of ownership, welfare, and intended destination
+                    have led to repeated rescue efforts and continuing
+                    public concern.
+                  </p>
+
+                  <span class="read-link">
+                    Read the cases →
+                  </span>
+
+                </div>
+              </a>
+
+            </div>
+          </section>
 
         </div>
       </div>
@@ -811,21 +882,24 @@
         <div class="information-grid">
 
           <article class="information-card">
+
             <span>China</span>
 
             <h3>Current Legal Framework</h3>
 
             <p>
-              An overview of the laws and regulations currently relevant
-              to animal management, disease control, wildlife, and public safety.
+              An overview of laws and regulations relevant to animal
+              management, disease control, wildlife, and public safety.
             </p>
 
             <a href="laws.html">
               Read more →
             </a>
+
           </article>
 
           <article class="information-card">
+
             <span>Legal Reform</span>
 
             <h3>Calls for Stronger Protection</h3>
@@ -838,9 +912,11 @@
             <a href="laws.html">
               Read more →
             </a>
+
           </article>
 
           <article class="information-card">
+
             <span>International Context</span>
 
             <h3>Laws Around the World</h3>
@@ -853,6 +929,7 @@
             <a href="laws.html">
               Read more →
             </a>
+
           </article>
 
         </div>
@@ -869,13 +946,14 @@
 
           <p>
             International reports, public statements, archived articles,
-            and other sources related to the documented cases.
+            and other sources related to documented cases.
           </p>
         </div>
 
         <div class="information-grid">
 
           <article class="information-card">
+
             <span>International Reporting</span>
 
             <h3>News Coverage</h3>
@@ -887,9 +965,11 @@
             <a href="media.html">
               View sources →
             </a>
+
           </article>
 
           <article class="information-card">
+
             <span>Public Records</span>
 
             <h3>Official Responses</h3>
@@ -902,9 +982,11 @@
             <a href="media.html">
               View sources →
             </a>
+
           </article>
 
           <article class="information-card">
+
             <span>Archive</span>
 
             <h3>Saved References</h3>
@@ -917,6 +999,7 @@
             <a href="media.html">
               View archive →
             </a>
+
           </article>
 
         </div>
@@ -925,7 +1008,10 @@
 
     <!-- Petitions -->
 
-    <section class="information-section alt" id="petitions">
+    <section
+      class="information-section alt"
+      id="petitions"
+    >
       <div class="information-inner">
 
         <div class="section-heading">
@@ -940,6 +1026,7 @@
         <div class="information-grid">
 
           <article class="information-card">
+
             <span>Public Action</span>
 
             <h3>Animal Protection Petitions</h3>
@@ -952,9 +1039,11 @@
             <a href="petitions.html">
               View petitions →
             </a>
+
           </article>
 
           <article class="information-card">
+
             <span>Resources</span>
 
             <h3>Ways to Learn More</h3>
@@ -967,21 +1056,24 @@
             <a href="petitions.html">
               View resources →
             </a>
+
           </article>
 
           <article class="information-card">
+
             <span>Share</span>
 
             <h3>Preserve the Information</h3>
 
             <p>
-              Share documented sources and direct readers to the original
+              Share documented sources and direct readers to original
               reporting whenever possible.
             </p>
 
             <a href="petitions.html">
               Learn more →
             </a>
+
           </article>
 
         </div>
@@ -997,11 +1089,11 @@
 
         <p>
           Voices For Animals CN is an independent, non-commercial
-          documentation project. Case information should be supported by
-          publicly available sources. Photographs should be credited when
-          possible, and AI-generated or illustrative images should be
-          clearly identified. Pet owners may request corrections, updates,
-          or removal of personal materials.
+          documentation project. Case information should be supported
+          by publicly available sources. Photographs should be credited
+          when possible, and AI-generated or illustrative images should
+          be clearly identified. Pet owners may request corrections,
+          updates, or removal of personal materials.
         </p>
 
       </div>

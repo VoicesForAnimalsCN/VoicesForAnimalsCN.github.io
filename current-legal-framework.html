@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="An overview of China's current legal framework relating to animals, including animal disease prevention, wildlife, livestock, emergency response, and the limits of protection for companion animals."
+  >
+
+  <title>
+    Current Legal Framework | Voices For Animals CN
+  </title>
+
+  <style>
+
+    /* =========================
+       Basic settings
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      width: 100%;
+      padding: 18px 5%;
+
+      border-bottom: 1px solid #303030;
+      background: rgba(17, 17, 17, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #c8c8c8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Case hero
+    ========================= */
+
+    .case-hero {
+      padding: 90px 24px 55px;
+      border-bottom: 1px solid #2e2e2e;
+      background:
+        linear-gradient(
+          135deg,
+          #171717,
+          #101010
+        );
+    }
+
+    .case-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-label {
+      margin-bottom: 16px;
+      color: #e06666;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .case-hero h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(43px, 7vw, 78px);
+      line-height: 1.03;
+      letter-spacing: -1.5px;
+    }
+
+    .case-subtitle {
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #c8c8c8;
+      font-size: clamp(18px, 2.2vw, 23px);
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 8px 13px;
+
+      border: 1px solid #784848;
+      background: #291919;
+
+      color: #f08a8a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       Main image
+    ========================= */
+
+    .image-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 20px;
+    }
+
+    .main-image {
+      display: block;
+      width: 100%;
+      max-height: 680px;
+      object-fit: cover;
+
+      border: 1px solid #343434;
+      background: #1e1e1e;
+    }
+
+    .image-caption {
+      margin: 12px 0 0;
+      color: #8f8f8f;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Page layout
+    ========================= */
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      gap: 65px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 100px;
+    }
+
+    /* =========================
+       Sidebar
+    ========================= */
+
+    .case-sidebar {
+      align-self: start;
+      position: sticky;
+      top: 100px;
+    }
+
+    .case-facts {
+      overflow: hidden;
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .case-facts h2 {
+      margin: 0;
+      padding: 18px 20px;
+
+      border-bottom: 1px solid #343434;
+
+      font-size: 17px;
+    }
+
+    .fact-row {
+      padding: 15px 20px;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .fact-row:last-child {
+      border-bottom: none;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 3px;
+
+      color: #858585;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .fact-value {
+      color: #ededed;
+      font-size: 14px;
+    }
+
+    .contents-box {
+      margin-top: 24px;
+      padding: 20px;
+
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .contents-box h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+
+    .contents-box a {
+      display: block;
+      padding: 5px 0;
+
+      color: #bdbdbd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .contents-box a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .case-article {
+      min-width: 0;
+    }
+
+    .content-section {
+      padding: 0 0 54px;
+      margin-bottom: 54px;
+      border-bottom: 1px solid #303030;
+    }
+
+    .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-section h2 {
+      margin: 0 0 22px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+    }
+
+    .content-section h3 {
+      margin: 28px 0 9px;
+      font-size: 21px;
+    }
+
+    .content-section p {
+      margin: 0 0 18px;
+      color: #cccccc;
+      font-size: 17px;
+    }
+
+    .content-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-note {
+      padding: 20px 22px;
+      border-left: 3px solid #d45e5e;
+      background: #191919;
+    }
+
+    /* =========================
+       Timeline
+    ========================= */
+
+    .case-timeline {
+      position: relative;
+      margin-top: 30px;
+      padding-left: 31px;
+    }
+
+    .case-timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 7px;
+
+      width: 2px;
+      background: #3b3b3b;
+    }
+
+    .timeline-event {
+      position: relative;
+      padding: 0 0 38px 22px;
+    }
+
+    .timeline-event:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-event::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -30px;
+
+      width: 14px;
+      height: 14px;
+
+      border: 3px solid #111;
+      border-radius: 50%;
+
+      background: #dc6262;
+      box-shadow: 0 0 0 2px #dc6262;
+    }
+
+    .timeline-date {
+      display: block;
+      margin-bottom: 5px;
+
+      color: #e36e6e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .timeline-event h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+    }
+
+    .timeline-event p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .source-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .source-card {
+      display: block;
+      padding: 22px;
+
+      border: 1px solid #343434;
+      background: #191919;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: #d45e5e;
+    }
+
+    .source-name {
+      display: block;
+      margin-bottom: 4px;
+
+      color: #e36e6e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .source-title {
+      display: block;
+      color: #f0f0f0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .source-date {
+      display: block;
+      margin-top: 7px;
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Warning
+    ========================= */
+
+    .content-warning {
+      padding: 22px;
+      border: 1px solid #614242;
+      background: #241919;
+    }
+
+    .content-warning strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #ef8c8c;
+    }
+
+    .content-warning p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Footer navigation
+    ========================= */
+
+    .case-footer-navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .case-footer-navigation a {
+      display: inline-block;
+      padding: 12px 18px;
+
+      border: 1px solid #414141;
+
+      color: #e6e6e6;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .case-footer-navigation a:hover {
+      border-color: #d45e5e;
+      background: #d45e5e;
+      color: #fff;
+    }
+
+    footer {
+      padding: 35px 24px;
+      border-top: 1px solid #303030;
+
+      color: #818181;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       Tablet and mobile
+    ========================= */
+
+    @media (max-width: 850px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .case-sidebar {
+        position: static;
+      }
+
+      .case-facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .case-facts h2 {
+        grid-column: 1 / -1;
+      }
+
+      .fact-row {
+        border-right: 1px solid #2d2d2d;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .case-hero {
+        padding-top: 65px;
+      }
+
+      .case-facts {
+        display: block;
+      }
+
+      .main-image {
+        max-height: 430px;
+      }
+    }
+  
+
+    /* =========================
+       Law-page additions
+    ========================= */
+
+    .law-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .law-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 310px;
+      padding: 26px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .law-card:hover {
+      border-color: #6f4545;
+    }
+
+    .law-card .law-type {
+      margin-bottom: 12px;
+      color: #e06a6a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .law-card h3 {
+      margin: 0 0 14px;
+      color: #f4f4f4;
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    .law-card p {
+      margin: 0 0 20px;
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    .law-meta {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #323232;
+      color: #8f8f8f;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .law-link {
+      display: inline-block;
+      margin-top: 13px;
+      color: #ee7878;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .law-link:hover {
+      text-decoration: underline;
+    }
+
+    .scope-table {
+      width: 100%;
+      margin-top: 25px;
+      border-collapse: collapse;
+      border: 1px solid #383838;
+      background: #191919;
+    }
+
+    .scope-table th,
+    .scope-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid #353535;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .scope-table th {
+      color: #f0f0f0;
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    .scope-table td {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    .scope-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .source-card .source-language {
+      display: block;
+      margin-top: 6px;
+      color: #858585;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .law-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scope-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+
+    <a class="site-name" href="index.html">
+      Voices For Animals CN
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="laws.html">Laws</a>
+      <a href="media.html">Media</a>
+      <a href="petitions.html">Petitions</a>
+    </div>
+
+  </nav>
+
+  <header class="case-hero">
+
+    <div class="case-hero-inner">
+
+      <div class="case-label">
+        China · Legal Overview
+      </div>
+
+      <h1>
+        Current Legal Framework
+      </h1>
+
+      <p class="case-subtitle">
+        An overview of existing Chinese laws and regulations relating
+        to animals, including disease control, wildlife protection,
+        livestock management, transport, and emergency response.
+      </p>
+
+      <span class="status-badge">
+        Reference Page · Updated July 2026
+      </span>
+
+    </div>
+
+  </header>
+
+  <main class="page-layout">
+
+    <aside class="case-sidebar">
+
+      <div class="case-facts">
+
+        <h2>Page Information</h2>
+
+        <div class="fact-row">
+          <span class="fact-label">Jurisdiction</span>
+          <span class="fact-value">
+            People's Republic of China
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Scope</span>
+          <span class="fact-value">
+            National laws and administrative regulations
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Primary Sources</span>
+          <span class="fact-value">
+            Government and legislative websites
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Companion Animals</span>
+          <span class="fact-value">
+            No unified national anti-cruelty statute
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Last Reviewed</span>
+          <span class="fact-value">
+            26 July 2026
+          </span>
+        </div>
+
+      </div>
+
+      <nav class="contents-box">
+
+        <h2>On This Page</h2>
+
+        <a href="#overview">Overview</a>
+        <a href="#scope">What the Framework Covers</a>
+        <a href="#laws">Principal Laws</a>
+        <a href="#companion-animals">Companion Animals</a>
+        <a href="#case-relevance">Relevance to Archived Cases</a>
+        <a href="#sources">Official Sources</a>
+        <a href="#notes">Research Notes</a>
+
+      </nav>
+
+    </aside>
+
+    <article class="case-article">
+
+      <section class="content-section" id="overview">
+
+        <h2>Overview</h2>
+
+        <p>
+          China does not currently have a single national law that
+          generally prohibits cruelty toward all animals. In a 2019
+          official response to a National People's Congress proposal,
+          the Ministry of Agriculture and Rural Affairs stated that
+          China had not enacted a unified anti-cruelty law, while noting
+          that animal-related protections appear across several laws,
+          regulations, rules, and policy documents.
+        </p>
+
+        <p>
+          The existing framework is therefore divided by subject.
+          Different rules apply depending on whether an animal is treated
+          as wildlife, livestock, an animal involved in disease-control
+          measures, a laboratory animal, an exhibited animal, or private
+          property.
+        </p>
+
+        <p>
+          These laws can regulate matters such as quarantine, transport,
+          infectious disease, breeding, slaughter, wildlife trafficking,
+          public health, and emergency response. They do not create a
+          comprehensive welfare system for ordinary companion animals
+          such as pet dogs and cats.
+        </p>
+
+        <div class="content-warning">
+
+          <strong>Scope of this page</strong>
+
+          <p>
+            This page provides general background information and links
+            to primary legal sources. It is not legal advice and does not
+            claim that every animal-related incident falls within the
+            laws summarized below.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="scope">
+
+        <h2>What the Framework Covers</h2>
+
+        <table class="scope-table">
+          <thead>
+            <tr>
+              <th>Area</th>
+              <th>Main Focus</th>
+              <th>Typical Limitation</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Animal disease prevention</td>
+              <td>
+                Disease monitoring, quarantine, inspection, treatment,
+                disposal, and public-health protection.
+              </td>
+              <td>
+                Primarily concerned with disease control rather than
+                general protection from cruelty.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Wildlife protection</td>
+              <td>
+                Protected species, habitats, hunting, breeding,
+                transportation, trade, and illegal consumption.
+              </td>
+              <td>
+                Applies to wildlife categories defined by law, not
+                generally to domestic dogs and cats.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Livestock regulation</td>
+              <td>
+                Breeding, husbandry, production, transport, slaughter,
+                genetic resources, food supply, and public-health risks.
+              </td>
+              <td>
+                Applies to animals listed within the national livestock
+                and poultry genetic-resources system.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Emergency animal-epidemic response</td>
+              <td>
+                Government authority, quarantine zones, emergency
+                control, culling, disinfection, and compensation.
+              </td>
+              <td>
+                Triggered by qualifying animal epidemics and is not a
+                general companion-animal welfare law.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section class="content-section" id="laws">
+
+        <h2>Principal Laws and Regulations</h2>
+
+        <div class="law-grid">
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Disease Prevention
+            </span>
+
+            <h3>
+              Animal Epidemic Prevention Law
+            </h3>
+
+            <p>
+              Governs the prevention, control, diagnosis, elimination,
+              and quarantine of animal diseases, as well as the safe
+              disposal of dead animals and animal products that may
+              present disease risks.
+            </p>
+
+            <p>
+              The law defines “animals” for its purposes as livestock,
+              poultry, and other animals that are artificially raised or
+              captured. Its central purpose is disease control, public
+              health, and protection of the animal-production sector.
+            </p>
+
+            <div class="law-meta">
+              Revised in 2021 · Effective 1 May 2021
+              <br>
+              National law
+              <br>
+              <a
+                class="law-link"
+                href="https://www.npc.gov.cn/c2/c30834/202101/t20210122_309854.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View official text →
+              </a>
+            </div>
+
+          </article>
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Wildlife
+            </span>
+
+            <h3>
+              Wildlife Protection Law
+            </h3>
+
+            <p>
+              Establishes protection and management systems for legally
+              defined wildlife and their habitats. It regulates hunting,
+              breeding, sale, purchase, use, transport, and trade.
+            </p>
+
+            <p>
+              The 2022 revision states that artificially bred wildlife
+              must be kept under conditions suited to the animals'
+              habits and must not be abused. It also prohibits specified
+              forms of illegal hunting, transport, trade, and consumption.
+            </p>
+
+            <div class="law-meta">
+              Revised in 2022 · Effective 1 May 2023
+              <br>
+              National law
+              <br>
+              <a
+                class="law-link"
+                href="https://www.mee.gov.cn/ywgz/fgbz/fl/202302/t20230220_1016885.shtml"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View official text →
+              </a>
+            </div>
+
+          </article>
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Livestock
+            </span>
+
+            <h3>
+              Animal Husbandry Law
+            </h3>
+
+            <p>
+              Regulates livestock and poultry genetic resources,
+              breeding, raising, commercial operation, transport, and
+              slaughter. Its purposes include product supply and safety,
+              public-health risk prevention, and development of the
+              livestock sector.
+            </p>
+
+            <p>
+              Its scope is tied to animals included in the national
+              livestock and poultry genetic-resources catalogue. Dogs
+              and cats are not treated as ordinary livestock under that
+              catalogue.
+            </p>
+
+            <div class="law-meta">
+              Revised in 2022 · Effective 1 March 2023
+              <br>
+              National law
+              <br>
+              <a
+                class="law-link"
+                href="https://nynct.fujian.gov.cn/xxgk/zcfg/flfg/202309/t20230925_6263809.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View government-hosted text →
+              </a>
+            </div>
+
+          </article>
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Emergency Response
+            </span>
+
+            <h3>
+              Regulation on Emergency Responses to Major Animal Epidemics
+            </h3>
+
+            <p>
+              Sets out government powers and procedures for responding
+              to serious animal epidemics, including reporting,
+              emergency command structures, movement restrictions,
+              quarantine, culling, disinfection, disposal, and support
+              measures.
+            </p>
+
+            <p>
+              It is especially relevant when authorities describe an
+              animal-removal operation as an epidemic-control measure,
+              but it does not itself provide a general legal basis for
+              cruelty prevention.
+            </p>
+
+            <div class="law-meta">
+              Promulgated in 2005 · Amended in 2017
+              <br>
+              State Council administrative regulation
+              <br>
+              <a
+                class="law-link"
+                href="https://xzfg.moj.gov.cn/front/law/detail?LawID=153"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View official regulation →
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <section
+        class="content-section"
+        id="companion-animals"
+      >
+
+        <h2>Companion Animals</h2>
+
+        <p>
+          Dogs and cats may be affected by rules concerning disease
+          prevention, quarantine, transport, ownership, property damage,
+          public order, food safety, and local dog-management systems.
+          However, those rules do not amount to a unified national
+          companion-animal welfare code.
+        </p>
+
+        <p>
+          In its 2019 response to a proposal for an anti-cruelty law,
+          the Ministry of Agriculture and Rural Affairs expressly stated
+          that a unified anti-cruelty law had not been enacted. The
+          response instead identified separate protections relating to
+          livestock, wildlife, laboratory animals, zoo animals, and
+          other regulated contexts.
+        </p>
+
+        <p>
+          This distinction is important. The absence of a comprehensive
+          anti-cruelty statute does not mean that every harmful act is
+          automatically lawful. Depending on the facts, existing laws
+          concerning property, theft, public order, illegal business
+          activity, wildlife, food safety, disease control, or online
+          conduct may still apply.
+        </p>
+
+        <div class="content-note">
+
+          <p>
+            Local governments may also maintain rules on dog licensing,
+            rabies vaccination, leashing, restricted breeds, public-space
+            management, and the handling of unowned animals. These rules
+            differ by city and should be examined separately from
+            national law.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section
+        class="content-section"
+        id="case-relevance"
+      >
+
+        <h2>Relevance to Archived Cases</h2>
+
+        <h3>Epidemic-control removals</h3>
+
+        <p>
+          Cases such as the Shangrao corgi and Snowball incidents require
+          close examination of the legal authority claimed by local
+          officials, the existence of a confirmed epidemic, applicable
+          quarantine or emergency plans, and whether the response was
+          proportionate and procedurally documented.
+        </p>
+
+        <h3>Cat theft and transport</h3>
+
+        <p>
+          Large cat-transport cases may involve several distinct legal
+          questions: whether particular cats were stolen property,
+          whether transport and quarantine documents were required,
+          whether protected wildlife was used as bait, whether business
+          or food-safety rules were violated, and whether police or
+          agricultural authorities had grounds to intervene.
+        </p>
+
+        <h3>Deliberate cruelty toward companion animals</h3>
+
+        <p>
+          Where a case concerns deliberate harm to an owned or community
+          dog or cat, the central legal gap is that China does not have a
+          single national anti-cruelty offence applying generally to all
+          companion animals. Other legal routes may exist, but they
+          depend heavily on ownership, public impact, evidence, location,
+          and the specific conduct involved.
+        </p>
+
+      </section>
+
+      <section class="content-section" id="sources">
+
+        <h2>Official Sources</h2>
+
+        <div class="source-list">
+
+          <a
+            class="source-card"
+            href="https://xmsyj.moa.gov.cn/zwfw/201909/t20190925_6328971.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              Ministry of Agriculture and Rural Affairs
+            </span>
+
+            <span class="source-title">
+              Response to Proposal No. 5074 of the Second Session
+              of the 13th National People's Congress
+            </span>
+
+            <span class="source-date">
+              25 September 2019 · Official discussion of the absence
+              of a unified anti-cruelty law
+            </span>
+
+            <span class="source-language">
+              Chinese-language official source
+            </span>
+
+          </a>
+
+          <a
+            class="source-card"
+            href="https://www.npc.gov.cn/c2/c30834/202101/t20210122_309854.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              National People's Congress
+            </span>
+
+            <span class="source-title">
+              Animal Epidemic Prevention Law of the People's Republic of China
+            </span>
+
+            <span class="source-date">
+              2021 revision
+            </span>
+
+            <span class="source-language">
+              Chinese-language official legal text
+            </span>
+
+          </a>
+
+          <a
+            class="source-card"
+            href="https://www.mee.gov.cn/ywgz/fgbz/fl/202302/t20230220_1016885.shtml"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              Ministry of Ecology and Environment
+            </span>
+
+            <span class="source-title">
+              Wildlife Protection Law of the People's Republic of China
+            </span>
+
+            <span class="source-date">
+              2022 revision · Published on ministry website
+            </span>
+
+            <span class="source-language">
+              Chinese-language official legal text
+            </span>
+
+          </a>
+
+          <a
+            class="source-card"
+            href="https://nynct.fujian.gov.cn/xxgk/zcfg/flfg/202309/t20230925_6263809.htm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              Fujian Provincial Department of Agriculture and Rural Affairs
+            </span>
+
+            <span class="source-title">
+              Animal Husbandry Law of the People's Republic of China
+            </span>
+
+            <span class="source-date">
+              2022 revision · Government-hosted legal text
+            </span>
+
+            <span class="source-language">
+              Chinese-language government source
+            </span>
+
+          </a>
+
+          <a
+            class="source-card"
+            href="https://xzfg.moj.gov.cn/front/law/detail?LawID=153"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              Ministry of Justice · National Administrative Regulations Database
+            </span>
+
+            <span class="source-title">
+              Regulation on Emergency Responses to Major Animal Epidemics
+            </span>
+
+            <span class="source-date">
+              State Council regulation · Amended in 2017
+            </span>
+
+            <span class="source-language">
+              Chinese-language official regulation
+            </span>
+
+          </a>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="notes">
+
+        <h2>Research and Verification Notes</h2>
+
+        <div class="content-note">
+
+          <p>
+            English titles on this page are descriptive translations
+            supplied by this archive. The linked Chinese texts remain
+            the controlling source.
+          </p>
+
+          <p>
+            A law's relevance to a particular incident depends on its
+            effective date, territorial jurisdiction, statutory scope,
+            implementing rules, local regulations, available evidence,
+            and the authority of the government body involved.
+          </p>
+
+          <p>
+            Statements about the absence of a unified anti-cruelty law
+            are based on the Ministry of Agriculture and Rural Affairs'
+            official 2019 response. This page should be reviewed if new
+            national legislation is enacted.
+          </p>
+
+          <p>
+            This archive does not provide legal representation or a
+            definitive interpretation of Chinese law.
+          </p>
+
+        </div>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <div class="case-footer-navigation">
+
+    <a href="laws.html">
+      ← Back to Animal Protection Laws
+    </a>
+
+    <a href="legal-reform.html">
+      Next: Calls for Stronger Protection →
+    </a>
+
+  </div>
+
+  <footer>
+    Voices For Animals CN · Independent documentation archive
+  </footer>
+
+</body>
+</html>

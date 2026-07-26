@@ -64,13 +64,13 @@
       gap: 24px;
 
       width: 100%;
-      padding: 24px 5%;
+      padding: 20px 5%;
 
-      background:
-        linear-gradient(
-          rgba(0, 0, 0, 0.75),
-          rgba(0, 0, 0, 0)
-        );
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+      background: rgba(10, 10, 10, 0.58);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
     }
 
     .site-name {
@@ -85,18 +85,45 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      gap: 22px;
+      gap: 10px;
     }
 
     .nav-links a {
-      color: #e0e0e0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 40px;
+      padding: 9px 15px;
+
+      border: 1px solid rgba(255, 255, 255, 0.38);
+
+      color: #f0f0f0;
       font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
       text-decoration: none;
-      transition: color 0.2s ease;
+
+      transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
     }
 
-    .nav-links a:hover {
-      color: #e06363;
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      border-color: #d65353;
+      background: #d65353;
+      color: #fff;
+      transform: translateY(-1px);
+      outline: none;
+    }
+
+    .nav-links a.active {
+      border-color: #ef7777;
+      background: rgba(214, 83, 83, 0.18);
+      color: #fff;
     }
 
     /* =========================
@@ -793,7 +820,14 @@
       }
 
       .nav-links {
-        gap: 14px;
+        width: 100%;
+        gap: 8px;
+      }
+
+      .nav-links a {
+        min-height: 38px;
+        padding: 8px 12px;
+        font-size: 13px;
       }
 
       .hero {
@@ -862,7 +896,7 @@
     </a>
 
     <div class="nav-links">
-      <a href="#home">Home</a>
+      <a class="active" href="#home" aria-current="page">Home</a>
       <a href="#cases">Cases</a>
       <a href="#laws">Animal Protection Laws</a>
       <a href="#media">Media Archive</a>

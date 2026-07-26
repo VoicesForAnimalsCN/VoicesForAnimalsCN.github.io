@@ -447,6 +447,26 @@
       text-decoration: underline;
     }
 
+
+    /* =========================
+       Media Archive grid
+    ========================= */
+
+    #media .information-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #media .information-card {
+      min-height: 315px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #media .information-card a {
+      margin-top: auto;
+    }
+
+
     /* =========================
        About
     ========================= */
@@ -472,6 +492,17 @@
       margin: 0;
       color: #bdbdbd;
       font-size: 17px;
+    }
+
+
+    .about-inner .ai-disclosure {
+      max-width: 760px;
+      margin: 24px auto 0;
+      padding-top: 22px;
+      border-top: 1px solid #333;
+      color: #929292;
+      font-size: 14px;
+      line-height: 1.7;
     }
 
     /* =========================
@@ -557,6 +588,11 @@
       .information-grid {
         grid-template-columns: 1fr;
       }
+
+      #media .information-grid {
+        grid-template-columns: 1fr;
+      }
+
     }
   </style>
 </head>
@@ -575,7 +611,7 @@
       <a href="#cases">Cases</a>
       <a href="#laws">Animal Protection Laws</a>
       <a href="#media">Media Archive</a>
-      <a href="#petitions">Petitions</a>
+      <a href="#petitions">Advocacy</a>
       <a href="#about">About</a>
     </div>
   </nav>
@@ -936,70 +972,89 @@
           <h2>Media Archive</h2>
 
           <p>
-            International reports, public statements, archived articles,
-            and other sources related to documented cases.
+            A source index preserving news coverage, public records,
+            academic research, and archived materials connected to
+            documented animal welfare cases.
           </p>
         </div>
 
         <div class="information-grid">
 
+          <!-- International and regional news -->
+
           <article class="information-card">
 
-            <span>INTERNATIONAL MEDIA</span>
+            <span>International Media</span>
 
             <h3>News Coverage</h3>
 
             <p>
-              International, regional,
-and independent reporting related
-to documented animal welfare cases,
-including news articles,
-investigative reports,
-and feature stories.
+              International, regional, and independent reporting related
+              to documented animal welfare cases, including news articles,
+              investigations, interviews, and feature stories.
             </p>
 
-            <a href="media.html">
-              View sources →
+            <a href="news-coverage.html">
+              View coverage →
             </a>
 
           </article>
 
+          <!-- Government and public records -->
+
           <article class="information-card">
 
-            <span>OFFICIAL DOCUMENTS</span>
+            <span>Official Documents</span>
 
             <h3>Government Records</h3>
 
             <p>
-              Official statements,
-government notices,
-police announcements,
-court documents,
-and other public records
-related to documented cases.
+              Official statements, government notices, police announcements,
+              court documents, administrative records, and other public
+              materials related to documented cases.
             </p>
 
-            <a href="media.html">
-              View sources →
+            <a href="government-records.html">
+              View records →
             </a>
 
           </article>
 
+          <!-- Academic research -->
+
           <article class="information-card">
 
-            <span>DIGITAL PRESERVATION</span>
+            <span>Research</span>
+
+            <h3>Academic Publications</h3>
+
+            <p>
+              Journal articles, legal analyses, policy papers, reports,
+              and academic publications concerning animal welfare,
+              companion animals, and animal protection law.
+            </p>
+
+            <a href="research-publications.html">
+              View research →
+            </a>
+
+          </article>
+
+          <!-- Preserved digital sources -->
+
+          <article class="information-card">
+
+            <span>Digital Preservation</span>
 
             <h3>Archived Sources</h3>
 
             <p>
-              Preserved webpages,
-archived social-media posts,
-cached articles,
-and historical references
-maintained for long-term documentation.
+              Preserved webpages, archived social-media posts, cached
+              articles, screenshots, and historical references maintained
+              when original materials become difficult to access.
             </p>
 
-            <a href="media.html">
+            <a href="archived-sources.html">
               View archive →
             </a>
 
@@ -1009,7 +1064,7 @@ maintained for long-term documentation.
       </div>
     </section>
 
-    <!-- Petitions -->
+    <!-- Advocacy & Public Action -->
 
     <section
       class="information-section alt"
@@ -1018,10 +1073,11 @@ maintained for long-term documentation.
       <div class="information-inner">
 
         <div class="section-heading">
-          <h2>Petitions</h2>
+          <h2>Advocacy &amp; Public Action</h2>
 
           <p>
-            Links to relevant public petitions, campaigns, and resources.
+            Public petitions, open letters, educational resources,
+            and lawful ways to support stronger animal protection.
             Inclusion does not necessarily represent endorsement by this archive.
           </p>
         </div>
@@ -1030,50 +1086,53 @@ maintained for long-term documentation.
 
           <article class="information-card">
 
-            <span>Public Action</span>
+            <span>Public Campaigns</span>
 
-            <h3>Animal Protection Petitions</h3>
+            <h3>Petitions &amp; Open Letters</h3>
 
             <p>
-              View petitions and public campaigns calling for stronger
-              protection of animals.
+              Public petitions, open letters, and advocacy campaigns
+              calling for stronger legal protection, greater transparency,
+              accountability, and improved animal welfare.
             </p>
 
             <a href="petitions.html">
-              View petitions →
+              View campaigns →
             </a>
 
           </article>
 
           <article class="information-card">
 
-            <span>Resources</span>
+            <span>Advocacy</span>
 
-            <h3>Ways to Learn More</h3>
+            <h3>Organizations &amp; Resources</h3>
 
             <p>
-              Find reporting, legal background, and organizations
-              connected to animal welfare discussions.
+              Animal-welfare organizations, legal resources,
+              educational materials, and advocacy groups working
+              on animal protection and responsible public awareness.
             </p>
 
-            <a href="petitions.html">
-              View resources →
+            <a href="advocacy-resources.html">
+              Explore resources →
             </a>
 
           </article>
 
           <article class="information-card">
 
-            <span>Share</span>
+            <span>Get Involved</span>
 
-            <h3>Preserve the Information</h3>
+            <h3>How You Can Help</h3>
 
             <p>
-              Share documented sources and direct readers to original
-              reporting whenever possible.
+              Learn how to support responsible reporting, preserve
+              reliable information, promote animal welfare, and
+              participate in lawful, evidence-based advocacy.
             </p>
 
-            <a href="petitions.html">
+            <a href="how-to-help.html">
               Learn more →
             </a>
 
@@ -1092,11 +1151,20 @@ maintained for long-term documentation.
 
         <p>
           Voices For Animals CN is an independent, non-commercial
-          documentation project. Case information should be supported
-          by publicly available sources. Photographs should be credited
-          when possible, and AI-generated or illustrative images should
-          be clearly identified. Pet owners may request corrections,
-          updates, or removal of personal materials.
+          documentation project. Case information is compiled from
+          publicly available reporting, official documents, archived
+          materials, and other cited sources. Photographs are credited
+          when possible, and AI-generated or illustrative images are
+          identified where applicable. Pet owners and other directly
+          affected parties may request corrections, updates, or removal
+          of personal materials.
+        </p>
+
+        <p class="ai-disclosure">
+          Artificial intelligence tools have assisted with website coding,
+          layout, drafting, translation, and editorial organization.
+          Sources, factual claims, and final publication decisions are
+          reviewed and selected by the archive's human editor.
         </p>
 
       </div>

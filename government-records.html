@@ -1,0 +1,1911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="An index of government statements, police notices, court materials, legislative responses, and other official records related to documented animal welfare cases in China."
+  >
+
+  <title>
+    Government Records | Voices For Animals CN
+  </title>
+
+  <style>
+
+
+
+
+
+    /* =========================
+       Basic settings
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      width: 100%;
+      padding: 18px 5%;
+
+      border-bottom: 1px solid #303030;
+      background: rgba(17, 17, 17, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #c8c8c8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Case hero
+    ========================= */
+
+    .case-hero {
+      padding: 90px 24px 55px;
+      border-bottom: 1px solid #2e2e2e;
+      background:
+        linear-gradient(
+          135deg,
+          #171717,
+          #101010
+        );
+    }
+
+    .case-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-label {
+      margin-bottom: 16px;
+      color: #e06666;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .case-hero h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(43px, 7vw, 78px);
+      line-height: 1.03;
+      letter-spacing: -1.5px;
+    }
+
+    .case-subtitle {
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #c8c8c8;
+      font-size: clamp(18px, 2.2vw, 23px);
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 8px 13px;
+
+      border: 1px solid #784848;
+      background: #291919;
+
+      color: #f08a8a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       Main image
+    ========================= */
+
+    .image-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 20px;
+    }
+
+    .main-image {
+      display: block;
+      width: 100%;
+      max-height: 680px;
+      object-fit: cover;
+
+      border: 1px solid #343434;
+      background: #1e1e1e;
+    }
+
+    .image-caption {
+      margin: 12px 0 0;
+      color: #8f8f8f;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Page layout
+    ========================= */
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      gap: 65px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 100px;
+    }
+
+    /* =========================
+       Sidebar
+    ========================= */
+
+    .case-sidebar {
+      align-self: start;
+      position: sticky;
+      top: 100px;
+    }
+
+    .case-facts {
+      overflow: hidden;
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .case-facts h2 {
+      margin: 0;
+      padding: 18px 20px;
+
+      border-bottom: 1px solid #343434;
+
+      font-size: 17px;
+    }
+
+    .fact-row {
+      padding: 15px 20px;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .fact-row:last-child {
+      border-bottom: none;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 3px;
+
+      color: #858585;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .fact-value {
+      color: #ededed;
+      font-size: 14px;
+    }
+
+    .contents-box {
+      margin-top: 24px;
+      padding: 20px;
+
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .contents-box h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+
+    .contents-box a {
+      display: block;
+      padding: 5px 0;
+
+      color: #bdbdbd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .contents-box a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .case-article {
+      min-width: 0;
+    }
+
+    .content-section {
+      padding: 0 0 54px;
+      margin-bottom: 54px;
+      border-bottom: 1px solid #303030;
+    }
+
+    .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-section h2 {
+      margin: 0 0 22px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+    }
+
+    .content-section h3 {
+      margin: 28px 0 9px;
+      font-size: 21px;
+    }
+
+    .content-section p {
+      margin: 0 0 18px;
+      color: #cccccc;
+      font-size: 17px;
+    }
+
+    .content-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-note {
+      padding: 20px 22px;
+      border-left: 3px solid #d45e5e;
+      background: #191919;
+    }
+
+    /* =========================
+       Timeline
+    ========================= */
+
+    .case-timeline {
+      position: relative;
+      margin-top: 30px;
+      padding-left: 31px;
+    }
+
+    .case-timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 7px;
+
+      width: 2px;
+      background: #3b3b3b;
+    }
+
+    .timeline-event {
+      position: relative;
+      padding: 0 0 38px 22px;
+    }
+
+    .timeline-event:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-event::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -30px;
+
+      width: 14px;
+      height: 14px;
+
+      border: 3px solid #111;
+      border-radius: 50%;
+
+      background: #dc6262;
+      box-shadow: 0 0 0 2px #dc6262;
+    }
+
+    .timeline-date {
+      display: block;
+      margin-bottom: 5px;
+
+      color: #e36e6e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .timeline-event h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+    }
+
+    .timeline-event p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .source-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .source-card {
+      display: block;
+      padding: 22px;
+
+      border: 1px solid #343434;
+      background: #191919;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: #d45e5e;
+    }
+
+    .source-name {
+      display: block;
+      margin-bottom: 4px;
+
+      color: #e36e6e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .source-title {
+      display: block;
+      color: #f0f0f0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .source-date {
+      display: block;
+      margin-top: 7px;
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Warning
+    ========================= */
+
+    .content-warning {
+      padding: 22px;
+      border: 1px solid #614242;
+      background: #241919;
+    }
+
+    .content-warning strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #ef8c8c;
+    }
+
+    .content-warning p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Footer navigation
+    ========================= */
+
+    .case-footer-navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .case-footer-navigation a {
+      display: inline-block;
+      padding: 12px 18px;
+
+      border: 1px solid #414141;
+
+      color: #e6e6e6;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .case-footer-navigation a:hover {
+      border-color: #d45e5e;
+      background: #d45e5e;
+      color: #fff;
+    }
+
+    footer {
+      padding: 35px 24px;
+      border-top: 1px solid #303030;
+
+      color: #818181;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       Tablet and mobile
+    ========================= */
+
+    @media (max-width: 850px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .case-sidebar {
+        position: static;
+      }
+
+      .case-facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .case-facts h2 {
+        grid-column: 1 / -1;
+      }
+
+      .fact-row {
+        border-right: 1px solid #2d2d2d;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .case-hero {
+        padding-top: 65px;
+      }
+
+      .case-facts {
+        display: block;
+      }
+
+      .main-image {
+        max-height: 430px;
+      }
+    }
+  
+
+    /* =========================
+       Law-page additions
+    ========================= */
+
+    .law-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .law-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 310px;
+      padding: 26px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .law-card:hover {
+      border-color: #6f4545;
+    }
+
+    .law-card .law-type {
+      margin-bottom: 12px;
+      color: #e06a6a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .law-card h3 {
+      margin: 0 0 14px;
+      color: #f4f4f4;
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    .law-card p {
+      margin: 0 0 20px;
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    .law-meta {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #323232;
+      color: #8f8f8f;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .law-link {
+      display: inline-block;
+      margin-top: 13px;
+      color: #ee7878;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .law-link:hover {
+      text-decoration: underline;
+    }
+
+    .scope-table {
+      width: 100%;
+      margin-top: 25px;
+      border-collapse: collapse;
+      border: 1px solid #383838;
+      background: #191919;
+    }
+
+    .scope-table th,
+    .scope-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid #353535;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .scope-table th {
+      color: #f0f0f0;
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    .scope-table td {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    .scope-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .source-card .source-language {
+      display: block;
+      margin-top: 6px;
+      color: #858585;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .law-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scope-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+  
+  
+  
+
+    /* =========================
+       News coverage index
+    ========================= */
+
+    .archive-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .archive-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .archive-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .archive-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .outlet-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .outlet-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .outlet-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .outlet-heading p {
+      max-width: 520px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .outlet-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .coverage-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .coverage-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 145px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .coverage-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .coverage-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .coverage-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .coverage-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .coverage-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .coverage-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .coverage-link:hover {
+      text-decoration: underline;
+    }
+
+    .case-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .archive-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .archive-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .outlet-heading {
+        display: block;
+      }
+
+      .outlet-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .coverage-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .coverage-meta {
+        text-align: left;
+      }
+    }
+
+  
+
+    /* =========================
+       Government records index
+    ========================= */
+
+    .record-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .record-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .record-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .record-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .record-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .record-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .record-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .record-heading p {
+      max-width: 560px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .record-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .record-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .record-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 160px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .record-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .record-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .record-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .record-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .record-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .record-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .record-link:hover {
+      text-decoration: underline;
+    }
+
+    .case-tag,
+    .status-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .status-tag.available {
+      border-color: #42614b;
+      color: #8fc79c;
+    }
+
+    .status-tag.limited {
+      border-color: #695b3e;
+      color: #d5bb7b;
+    }
+
+    .status-tag.not-archived {
+      border-color: #684141;
+      color: #df8a8a;
+    }
+
+    .empty-record {
+      padding: 20px;
+      border: 1px dashed #3d3d3d;
+      color: #979797;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .record-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .record-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .record-heading {
+        display: block;
+      }
+
+      .record-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .record-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .record-meta {
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+
+    <a class="site-name" href="index.html">
+      Voices For Animals CN
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="laws.html">Laws</a>
+      <a href="index.html#media">Media</a>
+      <a href="index.html#petitions">Advocacy</a>
+    </div>
+
+  </nav>
+
+  <header class="case-hero">
+
+    <div class="case-hero-inner">
+
+      <div class="case-label">
+        Official Documents
+      </div>
+
+      <h1>
+        Government Records
+      </h1>
+
+      <p class="case-subtitle">
+        An index of government statements, police notices,
+        court materials, administrative records, legislative responses,
+        and other public documents connected to this archive.
+      </p>
+
+      <span class="status-badge">
+        Official Source Index · Updated July 2026
+      </span>
+
+    </div>
+
+  </header>
+
+  <main class="page-layout">
+
+    <aside class="case-sidebar">
+
+      <div class="case-facts">
+
+        <h2>Archive Information</h2>
+
+        <div class="fact-row">
+          <span class="fact-label">Source Standard</span>
+          <span class="fact-value">
+            Issued by an identifiable public institution
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Document Types</span>
+          <span class="fact-value">
+            Statements, notices, court records, official replies, laws
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">
+            Primarily Chinese
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Missing Records</span>
+          <span class="fact-value">
+            Clearly marked as not currently archived
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Last Reviewed</span>
+          <span class="fact-value">
+            26 July 2026
+          </span>
+        </div>
+
+      </div>
+
+      <nav class="contents-box">
+
+        <h2>On This Page</h2>
+
+        <a href="#overview">Overview</a>
+        <a href="#local">Local Government Statements</a>
+        <a href="#police">Police Records</a>
+        <a href="#courts">Court &amp; Procuratorate Records</a>
+        <a href="#national">National Government Records</a>
+        <a href="#legal">Legal References</a>
+        <a href="#case-index">Records by Case</a>
+        <a href="#verification">Verification Notes</a>
+        <a href="#updates">Archive Updates</a>
+
+      </nav>
+
+    </aside>
+
+    <article class="case-article">
+
+      <section class="content-section" id="overview">
+
+        <h2>Overview</h2>
+
+        <p>
+          This page indexes publicly accessible statements, notices,
+          responses, legal texts, and other records issued by government
+          agencies, police authorities, courts, procuratorates,
+          legislatures, and related public institutions.
+        </p>
+
+        <p>
+          Official records are presented separately from news coverage,
+          public advocacy, organizational publications, and social-media
+          reporting. A media article quoting an official statement is not
+          treated as a substitute for the original record when the
+          original document cannot be located.
+        </p>
+
+        <p>
+          The existence of an official document does not necessarily mean
+          that every disputed fact has been investigated publicly or that
+          the record represents a complete account of the incident.
+        </p>
+
+        <div class="record-summary">
+
+          <div class="record-stat">
+            <strong>4</strong>
+            <span>Official legal sources</span>
+          </div>
+
+          <div class="record-stat">
+            <strong>1</strong>
+            <span>Official policy response</span>
+          </div>
+
+          <div class="record-stat">
+            <strong>5</strong>
+            <span>Cases reviewed</span>
+          </div>
+
+          <div class="record-stat">
+            <strong>3</strong>
+            <span>Cases with limited records</span>
+          </div>
+
+        </div>
+
+        <div class="content-warning">
+
+          <strong>Original-document standard</strong>
+
+          <p>
+            Where an original government, police, court, or procuratorate
+            document has not been located, this archive states that clearly
+            rather than presenting a news report as an official record.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="local">
+
+        <h2>Local Government Statements</h2>
+
+        <div class="record-group">
+
+          <div class="record-heading">
+            <div>
+              <h3>Shangrao Corgi Case</h3>
+              <p>
+                Local-government material relating to the killing of a
+                companion dog during centralized COVID-19 quarantine.
+              </p>
+            </div>
+
+            <span class="record-type">
+              Local Government
+            </span>
+          </div>
+
+          <div class="record-list">
+
+            <article class="record-entry">
+              <div>
+                <span class="case-tag">Shangrao Corgi</span>
+                <span class="status-tag limited">Indirectly documented</span>
+
+                <h4>
+                  Xinzhou District public response concerning the incident
+                </h4>
+
+                <p>
+                  News reporting described a local official response,
+                  including acknowledgment of improper handling and
+                  disciplinary action. An original, stable government-page
+                  copy has not yet been preserved in this archive.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="shangrao-corgi.html#official-response"
+                >
+                  View case documentation →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>Xinzhou District</strong>
+                November 2021
+                <br>
+                Original page not archived
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div class="content-note">
+
+          <p>
+            This section will be updated if an official government-domain
+            copy, authenticated archive capture, or clearly attributable
+            original statement becomes available.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="police">
+
+        <h2>Police Records</h2>
+
+        <div class="record-group">
+
+          <div class="record-heading">
+            <div>
+              <h3>Case-Related Police Materials</h3>
+              <p>
+                Police notices, investigation summaries, detention notices,
+                and public security announcements.
+              </p>
+            </div>
+
+            <span class="record-type">
+              Public Security
+            </span>
+          </div>
+
+          <div class="record-list">
+
+            <article class="record-entry">
+              <div>
+                <span class="case-tag">Papi</span>
+                <span class="status-tag not-archived">Not currently archived</span>
+
+                <h4>
+                  Beijing pet-poisoning investigation record
+                </h4>
+
+                <p>
+                  Media coverage describes an investigation and later
+                  prosecution connected to the poisoning of dogs and cats.
+                  No original police announcement is currently preserved
+                  in this archive.
+                </p>
+              </div>
+
+              <div class="record-meta">
+                <strong>Beijing</strong>
+                Record pending
+                <br>
+                Original source needed
+              </div>
+            </article>
+
+            <article class="record-entry">
+              <div>
+                <span class="case-tag">Cat Transport</span>
+                <span class="status-tag limited">Varies by incident</span>
+
+                <h4>
+                  Police intervention in documented cat-rescue operations
+                </h4>
+
+                <p>
+                  Some historical transport cases were reported to involve
+                  local police, including the 2022 Jinan and Jiangxi
+                  rescues. Original police notices have not yet been added
+                  to this page.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="cat-transport.html#related-cases"
+                >
+                  View related case context →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>Multiple Locations</strong>
+                2022 onward
+                <br>
+                Original records pending
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="courts">
+
+        <h2>Court &amp; Procuratorate Records</h2>
+
+        <div class="record-group">
+
+          <div class="record-heading">
+            <div>
+              <h3>Judicial and Prosecution Materials</h3>
+              <p>
+                Court judgments, hearing notices, procuratorate releases,
+                prosecution summaries, and related judicial records.
+              </p>
+            </div>
+
+            <span class="record-type">
+              Judicial Records
+            </span>
+          </div>
+
+          <div class="record-list">
+
+            <article class="record-entry">
+              <div>
+                <span class="case-tag">Papi</span>
+                <span class="status-tag limited">Reported outcome</span>
+
+                <h4>
+                  Beijing pet-poisoning court and prosecution materials
+                </h4>
+
+                <p>
+                  News reporting describes criminal proceedings and a legal
+                  outcome connected to the poisoning case. An original court
+                  judgment or procuratorate publication has not yet been
+                  preserved in this archive.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="papi.html"
+                >
+                  View Papi case page →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>Beijing</strong>
+                Judicial material pending
+                <br>
+                Original source needed
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div class="empty-record">
+          No original court judgment, procuratorate notice, or hearing
+          document is currently archived for Snowball, Wangwang,
+          or the 2026 Laizhou rescue.
+        </div>
+
+      </section>
+
+      <section class="content-section" id="national">
+
+        <h2>National Government Records</h2>
+
+        <div class="record-group">
+
+          <div class="record-heading">
+            <div>
+              <h3>Ministry of Agriculture and Rural Affairs</h3>
+              <p>
+                Official response concerning proposals for broader
+                animal-protection and anti-cruelty legislation.
+              </p>
+            </div>
+
+            <span class="record-type">
+              Ministry Response
+            </span>
+          </div>
+
+          <div class="record-list">
+
+            <article class="record-entry">
+              <div>
+                <span class="case-tag">Legal Reform</span>
+                <span class="status-tag available">Available</span>
+
+                <h4>
+                  Response to Proposal No. 5074 of the Second Session
+                  of the 13th National People's Congress
+                </h4>
+
+                <p>
+                  The Ministry stated that China had not enacted a unified
+                  anti-cruelty law and described existing animal-related
+                  protections distributed across sector-specific laws,
+                  regulations, and administrative measures.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="https://xmsyj.moa.gov.cn/zwfw/201909/t20190925_6328971.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View official response →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>Ministry of Agriculture and Rural Affairs</strong>
+                25 September 2019
+                <br>
+                Chinese
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <div class="record-group">
+
+          <div class="record-heading">
+            <div>
+              <h3>National People's Congress Standing Committee</h3>
+              <p>
+                National legislative action concerning illegal wildlife
+                trade and consumption.
+              </p>
+            </div>
+
+            <span class="record-type">
+              Legislative Decision
+            </span>
+          </div>
+
+          <div class="record-list">
+
+            <article class="record-entry">
+              <div>
+                <span class="case-tag">Wildlife Policy</span>
+                <span class="status-tag available">Available</span>
+
+                <h4>
+                  Decision concerning illegal wildlife trade and the
+                  consumption of terrestrial wildlife
+                </h4>
+
+                <p>
+                  A 2020 legislative decision strengthening restrictions
+                  related to illegal wildlife trade and consumption.
+                  It concerns wildlife and public-health policy rather than
+                  a general companion-animal anti-cruelty law.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="https://www.mee.gov.cn/home/ztbd/2020/dyyqfkzjz/zybs/202002/t20200225_765427.shtml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View official publication →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>NPC Standing Committee</strong>
+                February 2020
+                <br>
+                Chinese
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="legal">
+
+        <h2>Legal References</h2>
+
+        <div class="record-group">
+
+          <div class="record-heading">
+            <div>
+              <h3>Existing National Laws and Regulations</h3>
+              <p>
+                Primary legal texts used to explain the broader framework
+                surrounding disease control, wildlife, livestock,
+                and emergency response.
+              </p>
+            </div>
+
+            <span class="record-type">
+              Legal Texts
+            </span>
+          </div>
+
+          <div class="record-list">
+
+            <article class="record-entry">
+              <div>
+                <span class="status-tag available">Available</span>
+
+                <h4>
+                  Animal Epidemic Prevention Law
+                </h4>
+
+                <p>
+                  National law concerning animal-disease prevention,
+                  quarantine, control, treatment, and safe disposal.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="https://www.npc.gov.cn/c2/c30834/202101/t20210122_309854.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View official legal text →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>National People's Congress</strong>
+                2021 revision
+                <br>
+                Chinese
+              </div>
+            </article>
+
+            <article class="record-entry">
+              <div>
+                <span class="status-tag available">Available</span>
+
+                <h4>
+                  Wildlife Protection Law
+                </h4>
+
+                <p>
+                  National law regulating protected wildlife,
+                  habitats, hunting, breeding, transportation,
+                  trade, and consumption.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="https://www.mee.gov.cn/ywgz/fgbz/fl/202302/t20230220_1016885.shtml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View official legal text →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>Ministry of Ecology and Environment</strong>
+                2022 revision
+                <br>
+                Chinese
+              </div>
+            </article>
+
+            <article class="record-entry">
+              <div>
+                <span class="status-tag available">Available</span>
+
+                <h4>
+                  Animal Husbandry Law
+                </h4>
+
+                <p>
+                  National law covering livestock and poultry genetic
+                  resources, breeding, husbandry, transport,
+                  commercial operation, and slaughter.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="https://nynct.fujian.gov.cn/xxgk/zcfg/flfg/202309/t20230925_6263809.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View government-hosted text →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>Government-hosted legal text</strong>
+                2022 revision
+                <br>
+                Chinese
+              </div>
+            </article>
+
+            <article class="record-entry">
+              <div>
+                <span class="status-tag available">Available</span>
+
+                <h4>
+                  Regulation on Emergency Responses to Major Animal Epidemics
+                </h4>
+
+                <p>
+                  State Council regulation addressing reporting,
+                  quarantine, emergency control, culling, disinfection,
+                  disposal, and compensation.
+                </p>
+
+                <a
+                  class="record-link"
+                  href="https://xzfg.moj.gov.cn/front/law/detail?LawID=153"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View official regulation →
+                </a>
+              </div>
+
+              <div class="record-meta">
+                <strong>Ministry of Justice Database</strong>
+                Amended 2017
+                <br>
+                Chinese
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+        <p>
+          For explanatory summaries of these laws, see the
+          <a class="law-link" href="current-legal-framework.html">
+            Current Legal Framework
+          </a>
+          page.
+        </p>
+
+      </section>
+
+      <section class="content-section" id="case-index">
+
+        <h2>Records by Case</h2>
+
+        <table class="scope-table">
+          <thead>
+            <tr>
+              <th>Case</th>
+              <th>Official Material Currently Archived</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Shangrao Corgi</td>
+              <td>
+                Local response documented through reporting;
+                original stable government copy not yet preserved.
+              </td>
+              <td>
+                <span class="status-tag limited">Limited</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Snowball</td>
+              <td>
+                No original government, police, or court statement
+                currently archived.
+              </td>
+              <td>
+                <span class="status-tag not-archived">Not archived</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Papi</td>
+              <td>
+                Judicial outcome described in reporting; original police,
+                procuratorate, or court document still needed.
+              </td>
+              <td>
+                <span class="status-tag limited">Limited</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Wangwang</td>
+              <td>
+                No verified original official response currently archived.
+              </td>
+              <td>
+                <span class="status-tag not-archived">Not archived</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Cat Transport and Rescue Cases</td>
+              <td>
+                Police involvement reported in some historical incidents;
+                original records vary by location and remain incomplete.
+              </td>
+              <td>
+                <span class="status-tag limited">Developing</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section class="content-section" id="verification">
+
+        <h2>Verification Notes</h2>
+
+        <div class="content-note">
+
+          <p>
+            A document is classified as an official record only when it
+            originates from an identifiable government agency, police
+            authority, court, procuratorate, legislature, ministry,
+            or other public institution.
+          </p>
+
+          <p>
+            News articles quoting officials are not treated as substitutes
+            for original documents when the original source cannot be located.
+          </p>
+
+          <p>
+            Deleted pages, screenshots, reposts, and copied statements
+            require separate authentication and are labeled accordingly.
+          </p>
+
+          <p>
+            An official statement may represent a preliminary account,
+            administrative position, or limited investigation. It should
+            not automatically be treated as a complete factual record.
+          </p>
+
+          <p>
+            Chinese-language original texts remain controlling.
+            English descriptions on this page are concise archive summaries.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="updates">
+
+        <h2>Archive Updates</h2>
+
+        <div class="case-timeline">
+
+          <article class="timeline-event">
+
+            <span class="timeline-date">
+              26 July 2026
+            </span>
+
+            <h3>Government records index created</h3>
+
+            <p>
+              Added the official 2019 ministry response, the 2020 wildlife
+              decision, four legal references, case-by-case record status,
+              and clear notices where original police, court,
+              or government documents have not yet been preserved.
+            </p>
+
+          </article>
+
+          <!--
+          Copy this block when adding a new official document:
+
+          <article class="timeline-event">
+            <span class="timeline-date">Date added</span>
+            <h3>Official record added</h3>
+            <p>
+              Identify the issuing institution, document date,
+              document type, case connection, and preservation status.
+            </p>
+          </article>
+          -->
+
+        </div>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <div class="case-footer-navigation">
+
+    <a href="news-coverage.html">
+      ← Previous: News Coverage
+    </a>
+
+    <a href="research-publications.html">
+      Next: Academic Publications →
+    </a>
+
+  </div>
+
+  <footer>
+    Voices For Animals CN · Independent documentation archive
+  </footer>
+
+</body>
+</html>

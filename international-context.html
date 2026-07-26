@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="A comparative overview of selected animal-welfare and anti-cruelty laws in England and Wales, Germany, Switzerland, and California."
+  >
+
+  <title>
+    Comparative Legal Frameworks | Voices For Animals CN
+  </title>
+
+  <style>
+
+
+
+    /* =========================
+       Basic settings
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      width: 100%;
+      padding: 18px 5%;
+
+      border-bottom: 1px solid #303030;
+      background: rgba(17, 17, 17, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #c8c8c8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Case hero
+    ========================= */
+
+    .case-hero {
+      padding: 90px 24px 55px;
+      border-bottom: 1px solid #2e2e2e;
+      background:
+        linear-gradient(
+          135deg,
+          #171717,
+          #101010
+        );
+    }
+
+    .case-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-label {
+      margin-bottom: 16px;
+      color: #e06666;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .case-hero h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(43px, 7vw, 78px);
+      line-height: 1.03;
+      letter-spacing: -1.5px;
+    }
+
+    .case-subtitle {
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #c8c8c8;
+      font-size: clamp(18px, 2.2vw, 23px);
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 8px 13px;
+
+      border: 1px solid #784848;
+      background: #291919;
+
+      color: #f08a8a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       Main image
+    ========================= */
+
+    .image-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 20px;
+    }
+
+    .main-image {
+      display: block;
+      width: 100%;
+      max-height: 680px;
+      object-fit: cover;
+
+      border: 1px solid #343434;
+      background: #1e1e1e;
+    }
+
+    .image-caption {
+      margin: 12px 0 0;
+      color: #8f8f8f;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Page layout
+    ========================= */
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      gap: 65px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 100px;
+    }
+
+    /* =========================
+       Sidebar
+    ========================= */
+
+    .case-sidebar {
+      align-self: start;
+      position: sticky;
+      top: 100px;
+    }
+
+    .case-facts {
+      overflow: hidden;
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .case-facts h2 {
+      margin: 0;
+      padding: 18px 20px;
+
+      border-bottom: 1px solid #343434;
+
+      font-size: 17px;
+    }
+
+    .fact-row {
+      padding: 15px 20px;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .fact-row:last-child {
+      border-bottom: none;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 3px;
+
+      color: #858585;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .fact-value {
+      color: #ededed;
+      font-size: 14px;
+    }
+
+    .contents-box {
+      margin-top: 24px;
+      padding: 20px;
+
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .contents-box h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+
+    .contents-box a {
+      display: block;
+      padding: 5px 0;
+
+      color: #bdbdbd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .contents-box a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .case-article {
+      min-width: 0;
+    }
+
+    .content-section {
+      padding: 0 0 54px;
+      margin-bottom: 54px;
+      border-bottom: 1px solid #303030;
+    }
+
+    .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-section h2 {
+      margin: 0 0 22px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+    }
+
+    .content-section h3 {
+      margin: 28px 0 9px;
+      font-size: 21px;
+    }
+
+    .content-section p {
+      margin: 0 0 18px;
+      color: #cccccc;
+      font-size: 17px;
+    }
+
+    .content-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-note {
+      padding: 20px 22px;
+      border-left: 3px solid #d45e5e;
+      background: #191919;
+    }
+
+    /* =========================
+       Timeline
+    ========================= */
+
+    .case-timeline {
+      position: relative;
+      margin-top: 30px;
+      padding-left: 31px;
+    }
+
+    .case-timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 7px;
+
+      width: 2px;
+      background: #3b3b3b;
+    }
+
+    .timeline-event {
+      position: relative;
+      padding: 0 0 38px 22px;
+    }
+
+    .timeline-event:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-event::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -30px;
+
+      width: 14px;
+      height: 14px;
+
+      border: 3px solid #111;
+      border-radius: 50%;
+
+      background: #dc6262;
+      box-shadow: 0 0 0 2px #dc6262;
+    }
+
+    .timeline-date {
+      display: block;
+      margin-bottom: 5px;
+
+      color: #e36e6e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .timeline-event h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+    }
+
+    .timeline-event p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .source-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .source-card {
+      display: block;
+      padding: 22px;
+
+      border: 1px solid #343434;
+      background: #191919;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: #d45e5e;
+    }
+
+    .source-name {
+      display: block;
+      margin-bottom: 4px;
+
+      color: #e36e6e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .source-title {
+      display: block;
+      color: #f0f0f0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .source-date {
+      display: block;
+      margin-top: 7px;
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Warning
+    ========================= */
+
+    .content-warning {
+      padding: 22px;
+      border: 1px solid #614242;
+      background: #241919;
+    }
+
+    .content-warning strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #ef8c8c;
+    }
+
+    .content-warning p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Footer navigation
+    ========================= */
+
+    .case-footer-navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .case-footer-navigation a {
+      display: inline-block;
+      padding: 12px 18px;
+
+      border: 1px solid #414141;
+
+      color: #e6e6e6;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .case-footer-navigation a:hover {
+      border-color: #d45e5e;
+      background: #d45e5e;
+      color: #fff;
+    }
+
+    footer {
+      padding: 35px 24px;
+      border-top: 1px solid #303030;
+
+      color: #818181;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       Tablet and mobile
+    ========================= */
+
+    @media (max-width: 850px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .case-sidebar {
+        position: static;
+      }
+
+      .case-facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .case-facts h2 {
+        grid-column: 1 / -1;
+      }
+
+      .fact-row {
+        border-right: 1px solid #2d2d2d;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .case-hero {
+        padding-top: 65px;
+      }
+
+      .case-facts {
+        display: block;
+      }
+
+      .main-image {
+        max-height: 430px;
+      }
+    }
+  
+
+    /* =========================
+       Law-page additions
+    ========================= */
+
+    .law-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .law-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 310px;
+      padding: 26px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .law-card:hover {
+      border-color: #6f4545;
+    }
+
+    .law-card .law-type {
+      margin-bottom: 12px;
+      color: #e06a6a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .law-card h3 {
+      margin: 0 0 14px;
+      color: #f4f4f4;
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    .law-card p {
+      margin: 0 0 20px;
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    .law-meta {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #323232;
+      color: #8f8f8f;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .law-link {
+      display: inline-block;
+      margin-top: 13px;
+      color: #ee7878;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .law-link:hover {
+      text-decoration: underline;
+    }
+
+    .scope-table {
+      width: 100%;
+      margin-top: 25px;
+      border-collapse: collapse;
+      border: 1px solid #383838;
+      background: #191919;
+    }
+
+    .scope-table th,
+    .scope-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid #353535;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .scope-table th {
+      color: #f0f0f0;
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    .scope-table td {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    .scope-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .source-card .source-language {
+      display: block;
+      margin-top: 6px;
+      color: #858585;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .law-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scope-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+  
+  
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+
+    <a class="site-name" href="index.html">
+      Voices For Animals CN
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="laws.html">Laws</a>
+      <a href="media.html">Media</a>
+      <a href="petitions.html">Petitions</a>
+    </div>
+
+  </nav>
+
+  <header class="case-hero">
+
+    <div class="case-hero-inner">
+
+      <div class="case-label">
+        International Context
+      </div>
+
+      <h1>
+        Comparative Legal Frameworks
+      </h1>
+
+      <p class="case-subtitle">
+        A selected comparison of animal-welfare duties,
+        anti-cruelty offences, enforcement structures,
+        and companion-animal protections in other jurisdictions.
+      </p>
+
+      <span class="status-badge">
+        Comparative Reference · Not a Global Ranking
+      </span>
+
+    </div>
+
+  </header>
+
+  <main class="page-layout">
+
+    <aside class="case-sidebar">
+
+      <div class="case-facts">
+
+        <h2>Page Information</h2>
+
+        <div class="fact-row">
+          <span class="fact-label">Coverage</span>
+          <span class="fact-value">
+            Selected jurisdictions
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Jurisdictions</span>
+          <span class="fact-value">
+            England and Wales, Germany, Switzerland, California
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Focus</span>
+          <span class="fact-value">
+            General welfare duties and anti-cruelty rules
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Primary Sources</span>
+          <span class="fact-value">
+            Official legislation databases
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Last Reviewed</span>
+          <span class="fact-value">
+            26 July 2026
+          </span>
+        </div>
+
+      </div>
+
+      <nav class="contents-box">
+
+        <h2>On This Page</h2>
+
+        <a href="#overview">Overview</a>
+        <a href="#comparison">Comparison at a Glance</a>
+        <a href="#england-wales">England and Wales</a>
+        <a href="#germany">Germany</a>
+        <a href="#switzerland">Switzerland</a>
+        <a href="#california">California</a>
+        <a href="#lessons">Comparative Observations</a>
+        <a href="#sources">Official Sources</a>
+        <a href="#verification">Verification Notes</a>
+
+      </nav>
+
+    </aside>
+
+    <article class="case-article">
+
+      <section class="content-section" id="overview">
+
+        <h2>Overview</h2>
+
+        <p>
+          Animal-protection laws differ substantially across
+          jurisdictions. Some systems establish a general duty of care,
+          some prohibit causing pain or suffering without justification,
+          and others rely on detailed criminal offences, licensing rules,
+          or species-specific regulations.
+        </p>
+
+        <p>
+          This page compares selected legal frameworks that are often
+          discussed in international animal-welfare debates. It does not
+          rank countries or claim that one statute alone determines
+          real-world outcomes.
+        </p>
+
+        <p>
+          Effective protection also depends on enforcement capacity,
+          reporting systems, veterinary evidence, prosecutorial
+          practice, sentencing, local regulations, and whether affected
+          animals can be removed from danger.
+        </p>
+
+        <div class="content-warning">
+
+          <strong>Comparative use only</strong>
+
+          <p>
+            Legal terms do not always have identical meanings across
+            jurisdictions. A duty of care, cruelty offence, welfare
+            standard, or criminal penalty must be read within its own
+            legal system.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="comparison">
+
+        <h2>Comparison at a Glance</h2>
+
+        <table class="scope-table">
+          <thead>
+            <tr>
+              <th>Jurisdiction</th>
+              <th>Core Principle</th>
+              <th>Companion-Animal Relevance</th>
+              <th>Selected Enforcement Feature</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>England and Wales</td>
+              <td>
+                Prohibits unnecessary suffering and imposes a duty
+                to meet an animal's welfare needs.
+              </td>
+              <td>
+                Directly applies to animals under human responsibility,
+                including ordinary pets.
+              </td>
+              <td>
+                Criminal offences, disqualification orders,
+                deprivation, and other court powers.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Germany</td>
+              <td>
+                Protects animal life and well-being and prohibits causing
+                pain, suffering, or harm without reasonable cause.
+              </td>
+              <td>
+                General principles apply broadly, with additional
+                detailed regulations for dogs and other contexts.
+              </td>
+              <td>
+                Serious cruelty to vertebrates may result in criminal
+                penalties.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Switzerland</td>
+              <td>
+                Protects both animal welfare and animal dignity.
+              </td>
+              <td>
+                Applies to vertebrates, with implementing rules covering
+                keeping, handling, breeding, transport, and killing.
+              </td>
+              <td>
+                Federal law supported by extensive implementing
+                ordinances and cantonal enforcement.
+              </td>
+            </tr>
+
+            <tr>
+              <td>California</td>
+              <td>
+                Uses criminal prohibitions against malicious killing,
+                torture, neglect, and other specified conduct.
+              </td>
+              <td>
+                Applies to companion animals through criminal law and
+                additional state and local rules.
+              </td>
+              <td>
+                Penal Code offences may be charged as misdemeanors
+                or felonies depending on the provision and facts.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section class="content-section" id="england-wales">
+
+        <h2>England and Wales</h2>
+
+        <div class="law-grid">
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Principal Statute
+            </span>
+
+            <h3>
+              Animal Welfare Act 2006
+            </h3>
+
+            <p>
+              The Act applies primarily to vertebrate animals other than
+              humans and creates offences relating to unnecessary
+              suffering, mutilation, poisoning, animal fighting,
+              and certain other harmful conduct.
+            </p>
+
+            <p>
+              It also imposes a positive duty on a person responsible for
+              an animal to take reasonable steps to meet that animal's
+              needs.
+            </p>
+
+            <div class="law-meta">
+              England and Wales · National legislation
+              <br>
+              <a
+                class="law-link"
+                href="https://www.legislation.gov.uk/ukpga/2006/45/contents"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View official legislation →
+              </a>
+            </div>
+
+          </article>
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Welfare Duty
+            </span>
+
+            <h3>
+              Responsibility Before Severe Harm Occurs
+            </h3>
+
+            <p>
+              Section 9 requires responsible persons to consider an
+              animal's need for a suitable environment and diet,
+              normal behavior, appropriate housing with or apart from
+              other animals, and protection from pain, suffering,
+              injury, and disease.
+            </p>
+
+            <p>
+              This preventive duty differs from a framework that only
+              intervenes after extreme cruelty has already occurred.
+            </p>
+
+            <div class="law-meta">
+              Positive duty of care
+              <br>
+              <a
+                class="law-link"
+                href="https://www.legislation.gov.uk/ukpga/2006/45/section/9"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Section 9 →
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="germany">
+
+        <h2>Germany</h2>
+
+        <div class="law-grid">
+
+          <article class="law-card">
+
+            <span class="law-type">
+              General Principle
+            </span>
+
+            <h3>
+              Animal Welfare Act
+            </h3>
+
+            <p>
+              Germany's Animal Welfare Act states that its purpose is
+              to protect the life and well-being of animals because of
+              human responsibility toward animals as fellow creatures.
+            </p>
+
+            <p>
+              It provides that no person may cause an animal pain,
+              suffering, or harm without reasonable cause.
+            </p>
+
+            <div class="law-meta">
+              Federal law
+              <br>
+              <a
+                class="law-link"
+                href="https://www.gesetze-im-internet.de/tierschg/BJNR012770972.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View official text →
+              </a>
+            </div>
+
+          </article>
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Criminal Liability
+            </span>
+
+            <h3>
+              Serious Harm to Vertebrates
+            </h3>
+
+            <p>
+              Section 17 provides criminal penalties for killing a
+              vertebrate without reasonable cause or inflicting serious
+              pain or suffering in specified circumstances.
+            </p>
+
+            <p>
+              Separate provisions regulate keeping, breeding,
+              experimentation, slaughter, commercial activity,
+              and animal transport.
+            </p>
+
+            <div class="law-meta">
+              Criminal provision
+              <br>
+              <a
+                class="law-link"
+                href="https://www.gesetze-im-internet.de/tierschg/__17.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View Section 17 →
+              </a>
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="switzerland">
+
+        <h2>Switzerland</h2>
+
+        <div class="law-grid">
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Federal Framework
+            </span>
+
+            <h3>
+              Animal Welfare Act
+            </h3>
+
+            <p>
+              Switzerland's Animal Welfare Act states that its purpose
+              is to protect the dignity and welfare of animals.
+            </p>
+
+            <p>
+              The Act applies to vertebrates and allows the Federal
+              Council to extend provisions to certain invertebrates
+              based on scientific knowledge regarding their capacity
+              for sensation.
+            </p>
+
+            <div class="law-meta">
+              Federal Act of 16 December 2005
+              <br>
+              <a
+                class="law-link"
+                href="https://www.fedlex.admin.ch/eli/cc/2008/414/en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View official translation →
+              </a>
+            </div>
+
+          </article>
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Distinctive Concept
+            </span>
+
+            <h3>
+              Animal Dignity
+            </h3>
+
+            <p>
+              Swiss law goes beyond physical health by recognizing
+              animal dignity as a protected legal interest.
+            </p>
+
+            <p>
+              This concept addresses burdens imposed on animals,
+              including pain, suffering, harm, anxiety, humiliation,
+              major interference with appearance or abilities,
+              and excessive instrumentalization.
+            </p>
+
+            <div class="law-meta">
+              Official English translation is informational
+              and has no independent legal force
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="california">
+
+        <h2>California</h2>
+
+        <div class="law-grid">
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Criminal Law
+            </span>
+
+            <h3>
+              California Penal Code Section 597
+            </h3>
+
+            <p>
+              California's principal criminal cruelty provision addresses
+              specified conduct including maliciously and intentionally
+              maiming, mutilating, torturing, wounding, or killing an animal.
+            </p>
+
+            <p>
+              It also addresses failures to provide proper food, drink,
+              shelter, protection from weather, and veterinary care in
+              circumstances covered by the statute.
+            </p>
+
+            <div class="law-meta">
+              State criminal law
+              <br>
+              <a
+                class="law-link"
+                href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=597"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View official code section →
+              </a>
+            </div>
+
+          </article>
+
+          <article class="law-card">
+
+            <span class="law-type">
+              Legal Structure
+            </span>
+
+            <h3>
+              Offence-Based Protection
+            </h3>
+
+            <p>
+              California uses a combination of statewide criminal
+              offences, seizure and protective-custody procedures,
+              sentencing provisions, and local animal-control rules.
+            </p>
+
+            <p>
+              This differs from systems organized primarily around one
+              broad national welfare statute and a single general duty
+              of care.
+            </p>
+
+            <div class="law-meta">
+              Additional provisions may apply depending on the animal,
+              conduct, location, and responsible authority
+            </div>
+
+          </article>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="lessons">
+
+        <h2>Comparative Observations</h2>
+
+        <h3>General duties can allow earlier intervention</h3>
+
+        <p>
+          A positive welfare duty may permit authorities to respond to
+          inadequate care before conduct reaches the threshold of severe
+          intentional cruelty.
+        </p>
+
+        <h3>Definitions determine who is protected</h3>
+
+        <p>
+          Statutes vary in whether they cover all vertebrates, only
+          animals under human control, selected species, wild animals,
+          or particular commercial and institutional settings.
+        </p>
+
+        <h3>Penalties alone do not guarantee enforcement</h3>
+
+        <p>
+          Effective protection depends on inspection, veterinary
+          expertise, evidence preservation, public reporting,
+          prosecutorial decisions, court powers, and resources for
+          sheltering seized animals.
+        </p>
+
+        <h3>Companion animals need clear legal placement</h3>
+
+        <p>
+          Dogs and cats are most clearly protected where the law directly
+          recognizes the obligations of owners and keepers rather than
+          relying only on property, disease-control, or public-order rules.
+        </p>
+
+        <h3>International models cannot simply be copied</h3>
+
+        <p>
+          Legal concepts must be adapted to local institutions,
+          enforcement structures, constitutional arrangements,
+          veterinary systems, and existing national and local laws.
+        </p>
+
+      </section>
+
+      <section class="content-section" id="sources">
+
+        <h2>Official Sources</h2>
+
+        <div class="source-list">
+
+          <a
+            class="source-card"
+            href="https://www.legislation.gov.uk/ukpga/2006/45/contents"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              UK Legislation
+            </span>
+
+            <span class="source-title">
+              Animal Welfare Act 2006
+            </span>
+
+            <span class="source-date">
+              Official legislation database · England and Wales
+            </span>
+
+            <span class="source-language">
+              English-language official legal text
+            </span>
+
+          </a>
+
+          <a
+            class="source-card"
+            href="https://www.gesetze-im-internet.de/tierschg/BJNR012770972.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              Federal Ministry of Justice · Germany
+            </span>
+
+            <span class="source-title">
+              Tierschutzgesetz · Animal Welfare Act
+            </span>
+
+            <span class="source-date">
+              Official consolidated federal text
+            </span>
+
+            <span class="source-language">
+              German-language official legal text
+            </span>
+
+          </a>
+
+          <a
+            class="source-card"
+            href="https://www.fedlex.admin.ch/eli/cc/2008/414/en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              Fedlex · Swiss Confederation
+            </span>
+
+            <span class="source-title">
+              Animal Welfare Act of 16 December 2005
+            </span>
+
+            <span class="source-date">
+              Official federal publication
+            </span>
+
+            <span class="source-language">
+              Informational English translation
+            </span>
+
+          </a>
+
+          <a
+            class="source-card"
+            href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=597"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <span class="source-name">
+              California Legislative Information
+            </span>
+
+            <span class="source-title">
+              Penal Code Section 597
+            </span>
+
+            <span class="source-date">
+              Official California statutory text
+            </span>
+
+            <span class="source-language">
+              English-language official legal text
+            </span>
+
+          </a>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="verification">
+
+        <h2>Verification Notes</h2>
+
+        <div class="content-note">
+
+          <p>
+            This page presents selected examples and is not a complete
+            survey of global animal law.
+          </p>
+
+          <p>
+            The Animal Welfare Act 2006 discussed here principally
+            concerns England and Wales. Scotland and Northern Ireland
+            maintain separate legislation.
+          </p>
+
+          <p>
+            Germany and Switzerland also have extensive implementing
+            regulations that are not fully summarized on this page.
+          </p>
+
+          <p>
+            California is a state jurisdiction within the United States.
+            Federal law and local ordinances may also apply.
+          </p>
+
+          <p>
+            English summaries are prepared for general comparison.
+            Official legal texts, current amendments, judicial decisions,
+            and local implementing rules should be reviewed before making
+            a legal conclusion.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="updates">
+
+        <h2>Archive Updates</h2>
+
+        <div class="case-timeline">
+
+          <article class="timeline-event">
+
+            <span class="timeline-date">
+              26 July 2026
+            </span>
+
+            <h3>Comparative reference page created</h3>
+
+            <p>
+              Added selected frameworks from England and Wales,
+              Germany, Switzerland, and California, together with
+              official legal sources and comparative notes.
+            </p>
+
+          </article>
+
+          <!--
+          Copy this block when another jurisdiction is added:
+
+          <article class="timeline-event">
+            <span class="timeline-date">Date</span>
+            <h3>New jurisdiction added</h3>
+            <p>
+              Identify the law, its scope, distinctive features,
+              and official source.
+            </p>
+          </article>
+          -->
+
+        </div>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <div class="case-footer-navigation">
+
+    <a href="legal-reform.html">
+      ← Previous: Legal Reform
+    </a>
+
+    <a href="laws.html">
+      Back to Animal Protection Laws →
+    </a>
+
+  </div>
+
+  <footer>
+    Voices For Animals CN · Independent documentation archive
+  </footer>
+
+</body>
+</html>

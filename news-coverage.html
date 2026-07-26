@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="A reference index of international, regional, independent, and animal-welfare reporting related to documented animal welfare cases in China."
+  >
+
+  <title>
+    News Coverage | Voices For Animals CN
+  </title>
+
+  <style>
+
+
+
+
+    /* =========================
+       Basic settings
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      width: 100%;
+      padding: 18px 5%;
+
+      border-bottom: 1px solid #303030;
+      background: rgba(17, 17, 17, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #c8c8c8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Case hero
+    ========================= */
+
+    .case-hero {
+      padding: 90px 24px 55px;
+      border-bottom: 1px solid #2e2e2e;
+      background:
+        linear-gradient(
+          135deg,
+          #171717,
+          #101010
+        );
+    }
+
+    .case-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-label {
+      margin-bottom: 16px;
+      color: #e06666;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .case-hero h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(43px, 7vw, 78px);
+      line-height: 1.03;
+      letter-spacing: -1.5px;
+    }
+
+    .case-subtitle {
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #c8c8c8;
+      font-size: clamp(18px, 2.2vw, 23px);
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 8px 13px;
+
+      border: 1px solid #784848;
+      background: #291919;
+
+      color: #f08a8a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       Main image
+    ========================= */
+
+    .image-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 20px;
+    }
+
+    .main-image {
+      display: block;
+      width: 100%;
+      max-height: 680px;
+      object-fit: cover;
+
+      border: 1px solid #343434;
+      background: #1e1e1e;
+    }
+
+    .image-caption {
+      margin: 12px 0 0;
+      color: #8f8f8f;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Page layout
+    ========================= */
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      gap: 65px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 100px;
+    }
+
+    /* =========================
+       Sidebar
+    ========================= */
+
+    .case-sidebar {
+      align-self: start;
+      position: sticky;
+      top: 100px;
+    }
+
+    .case-facts {
+      overflow: hidden;
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .case-facts h2 {
+      margin: 0;
+      padding: 18px 20px;
+
+      border-bottom: 1px solid #343434;
+
+      font-size: 17px;
+    }
+
+    .fact-row {
+      padding: 15px 20px;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .fact-row:last-child {
+      border-bottom: none;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 3px;
+
+      color: #858585;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .fact-value {
+      color: #ededed;
+      font-size: 14px;
+    }
+
+    .contents-box {
+      margin-top: 24px;
+      padding: 20px;
+
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .contents-box h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+
+    .contents-box a {
+      display: block;
+      padding: 5px 0;
+
+      color: #bdbdbd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .contents-box a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .case-article {
+      min-width: 0;
+    }
+
+    .content-section {
+      padding: 0 0 54px;
+      margin-bottom: 54px;
+      border-bottom: 1px solid #303030;
+    }
+
+    .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-section h2 {
+      margin: 0 0 22px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+    }
+
+    .content-section h3 {
+      margin: 28px 0 9px;
+      font-size: 21px;
+    }
+
+    .content-section p {
+      margin: 0 0 18px;
+      color: #cccccc;
+      font-size: 17px;
+    }
+
+    .content-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-note {
+      padding: 20px 22px;
+      border-left: 3px solid #d45e5e;
+      background: #191919;
+    }
+
+    /* =========================
+       Timeline
+    ========================= */
+
+    .case-timeline {
+      position: relative;
+      margin-top: 30px;
+      padding-left: 31px;
+    }
+
+    .case-timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 7px;
+
+      width: 2px;
+      background: #3b3b3b;
+    }
+
+    .timeline-event {
+      position: relative;
+      padding: 0 0 38px 22px;
+    }
+
+    .timeline-event:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-event::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -30px;
+
+      width: 14px;
+      height: 14px;
+
+      border: 3px solid #111;
+      border-radius: 50%;
+
+      background: #dc6262;
+      box-shadow: 0 0 0 2px #dc6262;
+    }
+
+    .timeline-date {
+      display: block;
+      margin-bottom: 5px;
+
+      color: #e36e6e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .timeline-event h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+    }
+
+    .timeline-event p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .source-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .source-card {
+      display: block;
+      padding: 22px;
+
+      border: 1px solid #343434;
+      background: #191919;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: #d45e5e;
+    }
+
+    .source-name {
+      display: block;
+      margin-bottom: 4px;
+
+      color: #e36e6e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .source-title {
+      display: block;
+      color: #f0f0f0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .source-date {
+      display: block;
+      margin-top: 7px;
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Warning
+    ========================= */
+
+    .content-warning {
+      padding: 22px;
+      border: 1px solid #614242;
+      background: #241919;
+    }
+
+    .content-warning strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #ef8c8c;
+    }
+
+    .content-warning p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Footer navigation
+    ========================= */
+
+    .case-footer-navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .case-footer-navigation a {
+      display: inline-block;
+      padding: 12px 18px;
+
+      border: 1px solid #414141;
+
+      color: #e6e6e6;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .case-footer-navigation a:hover {
+      border-color: #d45e5e;
+      background: #d45e5e;
+      color: #fff;
+    }
+
+    footer {
+      padding: 35px 24px;
+      border-top: 1px solid #303030;
+
+      color: #818181;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       Tablet and mobile
+    ========================= */
+
+    @media (max-width: 850px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .case-sidebar {
+        position: static;
+      }
+
+      .case-facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .case-facts h2 {
+        grid-column: 1 / -1;
+      }
+
+      .fact-row {
+        border-right: 1px solid #2d2d2d;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .case-hero {
+        padding-top: 65px;
+      }
+
+      .case-facts {
+        display: block;
+      }
+
+      .main-image {
+        max-height: 430px;
+      }
+    }
+  
+
+    /* =========================
+       Law-page additions
+    ========================= */
+
+    .law-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .law-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 310px;
+      padding: 26px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .law-card:hover {
+      border-color: #6f4545;
+    }
+
+    .law-card .law-type {
+      margin-bottom: 12px;
+      color: #e06a6a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .law-card h3 {
+      margin: 0 0 14px;
+      color: #f4f4f4;
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    .law-card p {
+      margin: 0 0 20px;
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    .law-meta {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #323232;
+      color: #8f8f8f;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .law-link {
+      display: inline-block;
+      margin-top: 13px;
+      color: #ee7878;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .law-link:hover {
+      text-decoration: underline;
+    }
+
+    .scope-table {
+      width: 100%;
+      margin-top: 25px;
+      border-collapse: collapse;
+      border: 1px solid #383838;
+      background: #191919;
+    }
+
+    .scope-table th,
+    .scope-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid #353535;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .scope-table th {
+      color: #f0f0f0;
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    .scope-table td {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    .scope-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .source-card .source-language {
+      display: block;
+      margin-top: 6px;
+      color: #858585;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .law-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scope-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+  
+  
+  
+
+    /* =========================
+       News coverage index
+    ========================= */
+
+    .archive-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .archive-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .archive-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .archive-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .outlet-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .outlet-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .outlet-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .outlet-heading p {
+      max-width: 520px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .outlet-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .coverage-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .coverage-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 145px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .coverage-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .coverage-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .coverage-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .coverage-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .coverage-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .coverage-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .coverage-link:hover {
+      text-decoration: underline;
+    }
+
+    .case-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .archive-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .archive-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .outlet-heading {
+        display: block;
+      }
+
+      .outlet-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .coverage-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .coverage-meta {
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+
+    <a class="site-name" href="index.html">
+      Voices For Animals CN
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="laws.html">Laws</a>
+      <a href="index.html#media">Media</a>
+      <a href="index.html#petitions">Advocacy</a>
+    </div>
+
+  </nav>
+
+  <header class="case-hero">
+
+    <div class="case-hero-inner">
+
+      <div class="case-label">
+        International Media
+      </div>
+
+      <h1>
+        News Coverage
+      </h1>
+
+      <p class="case-subtitle">
+        A reference index of international, regional, independent,
+        and animal-welfare reporting connected to documented cases
+        in this archive.
+      </p>
+
+      <span class="status-badge">
+        Source Index · Updated July 2026
+      </span>
+
+    </div>
+
+  </header>
+
+  <main class="page-layout">
+
+    <aside class="case-sidebar">
+
+      <div class="case-facts">
+
+        <h2>Archive Information</h2>
+
+        <div class="fact-row">
+          <span class="fact-label">Indexed Sources</span>
+          <span class="fact-value">
+            11 published or publicly accessible items
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Cases Covered</span>
+          <span class="fact-value">
+            Shangrao Corgi, Snowball, Papi, cat transport cases
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Languages</span>
+          <span class="fact-value">
+            English and Chinese
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Organization</span>
+          <span class="fact-value">
+            By source type and publisher
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Last Reviewed</span>
+          <span class="fact-value">
+            26 July 2026
+          </span>
+        </div>
+
+      </div>
+
+      <nav class="contents-box">
+
+        <h2>On This Page</h2>
+
+        <a href="#overview">Overview</a>
+        <a href="#international">International News</a>
+        <a href="#regional">Regional &amp; Independent Media</a>
+        <a href="#organizations">Animal-Welfare Organizations</a>
+        <a href="#documentation">Independent Documentation</a>
+        <a href="#case-index">Index by Case</a>
+        <a href="#verification">Verification Notes</a>
+        <a href="#updates">Archive Updates</a>
+
+      </nav>
+
+    </aside>
+
+    <article class="case-article">
+
+      <section class="content-section" id="overview">
+
+        <h2>Overview</h2>
+
+        <p>
+          This page indexes reporting and public documentation used
+          throughout Voices For Animals CN. Links point to the original
+          publisher or account whenever possible.
+        </p>
+
+        <p>
+          Entries are organized by source type and publisher so readers
+          can compare how individual cases were reported across
+          international, regional, independent, and advocacy-based outlets.
+        </p>
+
+        <p>
+          The archive summarizes and links to reporting rather than
+          reproducing full copyrighted articles. Inclusion does not imply
+          endorsement of a publisher's wording, editorial position,
+          conclusions, or advocacy activity.
+        </p>
+
+        <div class="archive-summary">
+
+          <div class="archive-stat">
+            <strong>4</strong>
+            <span>Cases indexed</span>
+          </div>
+
+          <div class="archive-stat">
+            <strong>9</strong>
+            <span>Publishers and accounts</span>
+          </div>
+
+          <div class="archive-stat">
+            <strong>11</strong>
+            <span>Source entries</span>
+          </div>
+
+          <div class="archive-stat">
+            <strong>2</strong>
+            <span>Languages represented</span>
+          </div>
+
+        </div>
+
+        <div class="content-note">
+
+          <p>
+            Social-media documentation and animal-welfare organization
+            publications are labeled separately from independent news
+            reporting so readers can evaluate the nature of each source.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="international">
+
+        <h2>International News</h2>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>BBC News</h3>
+              <p>
+                International public-service news reporting.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              International News
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Shangrao Corgi</span>
+
+                <h4>
+                  Chinese outrage after dog killed while owner was in quarantine
+                </h4>
+
+                <p>
+                  English-language reporting on the killing of a corgi
+                  in Shangrao while the owner was in centralized quarantine,
+                  together with public reaction and the local response.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.bbc.com/news/world-asia-china-59249485"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>BBC News</strong>
+                November 2021
+                <br>
+                English
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>The New York Times Chinese Edition</h3>
+              <p>
+                Chinese-language international news and analysis.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              International News
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Shangrao Corgi</span>
+
+                <h4>
+                  Chinese-language report on the Shangrao corgi case
+                </h4>
+
+                <p>
+                  Reporting on the dog's death during COVID-19 quarantine
+                  controls and the broader public debate over the treatment
+                  of companion animals.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://cn.nytimes.com/china/20211115/corgi-clubbing-death/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>纽约时报中文网</strong>
+                November 2021
+                <br>
+                Chinese
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>Channel NewsAsia</h3>
+              <p>
+                Singapore-based regional and international news outlet.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              Regional News
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Papi</span>
+
+                <h4>
+                  China animal abuse case involving poisoned dogs in Beijing
+                </h4>
+
+                <p>
+                  English-language reporting on the Beijing pet-poisoning
+                  case, its legal proceedings, and wider concern over
+                  protections for companion animals.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.channelnewsasia.com/east-asia/china-animal-abuse-beijing-man-poisoned-dogs-5578301"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>Channel NewsAsia</strong>
+                Case follow-up
+                <br>
+                English
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="content-section" id="regional">
+
+        <h2>Regional &amp; Independent Media</h2>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>Sixth Tone</h3>
+              <p>
+                English-language publication covering contemporary China.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              Independent Media
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Shangrao Corgi</span>
+
+                <h4>
+                  Chinese netizens angry after quarantine staff kills pet dog
+                </h4>
+
+                <p>
+                  Coverage of the Shangrao incident, online public reaction,
+                  and questions surrounding epidemic-control procedures.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.sixthtone.com/news/1008964/chinese-netizens-angry-after-quarantine-staff-kills-pet-dog-"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>Sixth Tone</strong>
+                November 2021
+                <br>
+                English
+              </div>
+            </article>
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Papi</span>
+
+                <h4>
+                  Reporting on the Beijing pet-poisoning prosecution
+                </h4>
+
+                <p>
+                  A report examining the poisoning of companion animals
+                  in Beijing and the later criminal proceedings connected
+                  to the case.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.sixthtone.com/news/1016077"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>Sixth Tone</strong>
+                Case follow-up
+                <br>
+                English
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>What's on Weibo</h3>
+              <p>
+                Independent English-language reporting and analysis
+                of Chinese social-media developments.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              Independent Media
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Snowball</span>
+
+                <h4>
+                  Huizhou pet dog beaten to death while owners were in quarantine
+                </h4>
+
+                <p>
+                  English-language account of Snowball's death and the
+                  subsequent online response during China's COVID-19
+                  quarantine period.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.whatsonweibo.com/huizhou-pet-dog-beaten-to-death-by-health-workers-while-owners-are-in-quarantine/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>What's on Weibo</strong>
+                March 2022
+                <br>
+                English
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>Taiwan News</h3>
+              <p>
+                English-language regional news outlet based in Taiwan.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              Regional News
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Snowball</span>
+
+                <h4>
+                  Report on a Samoyed killed during COVID disinfection
+                </h4>
+
+                <p>
+                  Regional English-language coverage of Snowball's death,
+                  the circumstances described by the owner, and public anger.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.taiwannews.com.tw/news/4463605"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>Taiwan News</strong>
+                March 2022
+                <br>
+                English
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>China News Service</h3>
+              <p>
+                Chinese-language national news service.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              Chinese Media
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Shangrao Corgi</span>
+
+                <h4>
+                  Local response and follow-up concerning the Shangrao incident
+                </h4>
+
+                <p>
+                  Chinese-language reporting documenting the official
+                  response and public controversy following the dog's death.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.chinanews.com/sh/2021/11-14/9608762.shtml"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original article →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>中国新闻网</strong>
+                November 2021
+                <br>
+                Chinese
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </section>
+
+      <section class="content-section" id="organizations">
+
+        <h2>Animal-Welfare Organizations</h2>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>Humane World for Animals</h3>
+              <p>
+                Animal-welfare organization publication and advocacy source.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              Advocacy Source
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">Cat Transport</span>
+                <span class="case-tag">Pet Theft</span>
+
+                <h4>
+                  Stolen pet cats discovered among roughly 150 being sold into China's meat trade
+                </h4>
+
+                <p>
+                  An organizational report describing the 2022 Jinan rescue,
+                  the discovery of identifiable stolen pets, the alleged use
+                  of protected sparrows as bait, and a separate large rescue
+                  in Jiangxi.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.humaneworld.org/en/blog/stolen-pet-cats-discovered-among"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Read original publication →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>Humane World for Animals</strong>
+                1 September 2022
+                <br>
+                English
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="content-warning">
+
+          <strong>Source classification</strong>
+
+          <p>
+            Publications from animal-welfare organizations may combine
+            factual reporting with advocacy, campaigning, fundraising,
+            or policy recommendations. They are preserved here as
+            organizational sources rather than labeled as independent news.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="documentation">
+
+        <h2>Independent Documentation</h2>
+
+        <div class="outlet-group">
+
+          <div class="outlet-heading">
+            <div>
+              <h3>Instagram Rescue Updates</h3>
+              <p>
+                Social-media updates presenting footage and English
+                explanations relating to a developing rescue.
+              </p>
+            </div>
+
+            <span class="outlet-type">
+              Social Media
+            </span>
+          </div>
+
+          <div class="coverage-list">
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">2026 Laizhou Rescue</span>
+
+                <h4>
+                  Update on the reported large-scale cat rescue in Laizhou
+                </h4>
+
+                <p>
+                  A public Instagram reel containing rescue footage and
+                  English-language explanatory text. This is treated as
+                  a primary developing source, not independent journalism.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.instagram.com/reel/DbIwN4sgkQL/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View original post →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>Instagram</strong>
+                July 2026
+                <br>
+                Social-media source
+              </div>
+            </article>
+
+            <article class="coverage-entry">
+              <div>
+                <span class="case-tag">2026 Laizhou Rescue</span>
+
+                <h4>
+                  Related footage and claims concerning missing cats
+                </h4>
+
+                <p>
+                  A related public post used as supplementary documentation.
+                  Its claims remain subject to independent confirmation.
+                </p>
+
+                <a
+                  class="coverage-link"
+                  href="https://www.instagram.com/reel/DbGp09IpOh6/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View original post →
+                </a>
+              </div>
+
+              <div class="coverage-meta">
+                <strong>Instagram</strong>
+                July 2026
+                <br>
+                Supporting source
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="content-note">
+
+          <p>
+            Social-media posts may be edited, removed, translated,
+            reposted without context, or presented without supporting
+            documentation. They are labeled clearly and should be
+            evaluated alongside official records and independent reporting.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="case-index">
+
+        <h2>Index by Case</h2>
+
+        <table class="scope-table">
+          <thead>
+            <tr>
+              <th>Case</th>
+              <th>Indexed Sources</th>
+              <th>Case Page</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Shangrao Corgi</td>
+              <td>
+                BBC News, New York Times Chinese, Sixth Tone,
+                China News Service
+              </td>
+              <td>
+                <a class="law-link" href="shangrao-corgi.html">
+                  Open case →
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Snowball</td>
+              <td>
+                What's on Weibo, Taiwan News
+              </td>
+              <td>
+                <a class="law-link" href="snowball.html">
+                  Open case →
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Papi</td>
+              <td>
+                Sixth Tone, Channel NewsAsia
+              </td>
+              <td>
+                <a class="law-link" href="papi.html">
+                  Open case →
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Cat Transport and Rescue Cases</td>
+              <td>
+                Humane World for Animals, Instagram rescue updates
+              </td>
+              <td>
+                <a class="law-link" href="cat-transport.html">
+                  Open case →
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+      <section class="content-section" id="verification">
+
+        <h2>Verification Notes</h2>
+
+        <div class="content-note">
+
+          <p>
+            Links point to original publishers or public accounts
+            whenever possible. Article availability, headlines, page
+            structure, and access restrictions may change over time.
+          </p>
+
+          <p>
+            Entries summarize the relevance of each source and do not
+            reproduce complete articles. Copyright remains with the
+            original publisher or creator.
+          </p>
+
+          <p>
+            Media reporting is not automatically treated as proof of
+            every claim it contains. Case pages compare sources and
+            identify uncertainty, disputed details, and limitations.
+          </p>
+
+          <p>
+            Advocacy publications and social-media posts are labeled
+            separately from independent reporting. Their inclusion is
+            for documentation and does not imply endorsement.
+          </p>
+
+          <p>
+            Archived versions may later be added if an original page
+            becomes unavailable, provided the preserved copy can be
+            documented accurately and used lawfully.
+          </p>
+
+        </div>
+
+      </section>
+
+      <section class="content-section" id="updates">
+
+        <h2>Archive Updates</h2>
+
+        <div class="case-timeline">
+
+          <article class="timeline-event">
+
+            <span class="timeline-date">
+              26 July 2026
+            </span>
+
+            <h3>News coverage index created</h3>
+
+            <p>
+              Added reporting and public documentation connected to the
+              Shangrao corgi, Snowball, Papi, and cat transport cases.
+              Sources were separated into international news, regional
+              and independent media, animal-welfare organizations, and
+              social-media documentation.
+            </p>
+
+          </article>
+
+          <!--
+          Copy this block when adding a new source:
+
+          <article class="timeline-event">
+            <span class="timeline-date">Date added</span>
+            <h3>Publisher and article added</h3>
+            <p>
+              Identify the case, publisher, article date,
+              language, and source classification.
+            </p>
+          </article>
+          -->
+
+        </div>
+
+      </section>
+
+    </article>
+
+  </main>
+
+  <div class="case-footer-navigation">
+
+    <a href="index.html#media">
+      ← Back to Media Archive
+    </a>
+
+    <a href="government-records.html">
+      Next: Government Records →
+    </a>
+
+  </div>
+
+  <footer>
+    Voices For Animals CN · Independent documentation archive
+  </footer>
+
+</body>
+</html>

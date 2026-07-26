@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="A preservation index for archived webpages, social-media posts, screenshots, and historical source records connected to Voices For Animals CN."
+  >
+
+  <title>
+    Archived Sources | Voices For Animals CN
+  </title>
+
+  <style>
+
+
+
+
+
+
+    /* =========================
+       Basic settings
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      width: 100%;
+      padding: 18px 5%;
+
+      border-bottom: 1px solid #303030;
+      background: rgba(17, 17, 17, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #c8c8c8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Case hero
+    ========================= */
+
+    .case-hero {
+      padding: 90px 24px 55px;
+      border-bottom: 1px solid #2e2e2e;
+      background:
+        linear-gradient(
+          135deg,
+          #171717,
+          #101010
+        );
+    }
+
+    .case-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-label {
+      margin-bottom: 16px;
+      color: #e06666;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .case-hero h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(43px, 7vw, 78px);
+      line-height: 1.03;
+      letter-spacing: -1.5px;
+    }
+
+    .case-subtitle {
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #c8c8c8;
+      font-size: clamp(18px, 2.2vw, 23px);
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 8px 13px;
+
+      border: 1px solid #784848;
+      background: #291919;
+
+      color: #f08a8a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       Main image
+    ========================= */
+
+    .image-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 20px;
+    }
+
+    .main-image {
+      display: block;
+      width: 100%;
+      max-height: 680px;
+      object-fit: cover;
+
+      border: 1px solid #343434;
+      background: #1e1e1e;
+    }
+
+    .image-caption {
+      margin: 12px 0 0;
+      color: #8f8f8f;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Page layout
+    ========================= */
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      gap: 65px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 100px;
+    }
+
+    /* =========================
+       Sidebar
+    ========================= */
+
+    .case-sidebar {
+      align-self: start;
+      position: sticky;
+      top: 100px;
+    }
+
+    .case-facts {
+      overflow: hidden;
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .case-facts h2 {
+      margin: 0;
+      padding: 18px 20px;
+
+      border-bottom: 1px solid #343434;
+
+      font-size: 17px;
+    }
+
+    .fact-row {
+      padding: 15px 20px;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .fact-row:last-child {
+      border-bottom: none;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 3px;
+
+      color: #858585;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .fact-value {
+      color: #ededed;
+      font-size: 14px;
+    }
+
+    .contents-box {
+      margin-top: 24px;
+      padding: 20px;
+
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .contents-box h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+
+    .contents-box a {
+      display: block;
+      padding: 5px 0;
+
+      color: #bdbdbd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .contents-box a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .case-article {
+      min-width: 0;
+    }
+
+    .content-section {
+      padding: 0 0 54px;
+      margin-bottom: 54px;
+      border-bottom: 1px solid #303030;
+    }
+
+    .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-section h2 {
+      margin: 0 0 22px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+    }
+
+    .content-section h3 {
+      margin: 28px 0 9px;
+      font-size: 21px;
+    }
+
+    .content-section p {
+      margin: 0 0 18px;
+      color: #cccccc;
+      font-size: 17px;
+    }
+
+    .content-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-note {
+      padding: 20px 22px;
+      border-left: 3px solid #d45e5e;
+      background: #191919;
+    }
+
+    /* =========================
+       Timeline
+    ========================= */
+
+    .case-timeline {
+      position: relative;
+      margin-top: 30px;
+      padding-left: 31px;
+    }
+
+    .case-timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 7px;
+
+      width: 2px;
+      background: #3b3b3b;
+    }
+
+    .timeline-event {
+      position: relative;
+      padding: 0 0 38px 22px;
+    }
+
+    .timeline-event:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-event::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -30px;
+
+      width: 14px;
+      height: 14px;
+
+      border: 3px solid #111;
+      border-radius: 50%;
+
+      background: #dc6262;
+      box-shadow: 0 0 0 2px #dc6262;
+    }
+
+    .timeline-date {
+      display: block;
+      margin-bottom: 5px;
+
+      color: #e36e6e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .timeline-event h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+    }
+
+    .timeline-event p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .source-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .source-card {
+      display: block;
+      padding: 22px;
+
+      border: 1px solid #343434;
+      background: #191919;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: #d45e5e;
+    }
+
+    .source-name {
+      display: block;
+      margin-bottom: 4px;
+
+      color: #e36e6e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .source-title {
+      display: block;
+      color: #f0f0f0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .source-date {
+      display: block;
+      margin-top: 7px;
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Warning
+    ========================= */
+
+    .content-warning {
+      padding: 22px;
+      border: 1px solid #614242;
+      background: #241919;
+    }
+
+    .content-warning strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #ef8c8c;
+    }
+
+    .content-warning p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Footer navigation
+    ========================= */
+
+    .case-footer-navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .case-footer-navigation a {
+      display: inline-block;
+      padding: 12px 18px;
+
+      border: 1px solid #414141;
+
+      color: #e6e6e6;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .case-footer-navigation a:hover {
+      border-color: #d45e5e;
+      background: #d45e5e;
+      color: #fff;
+    }
+
+    footer {
+      padding: 35px 24px;
+      border-top: 1px solid #303030;
+
+      color: #818181;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       Tablet and mobile
+    ========================= */
+
+    @media (max-width: 850px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .case-sidebar {
+        position: static;
+      }
+
+      .case-facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .case-facts h2 {
+        grid-column: 1 / -1;
+      }
+
+      .fact-row {
+        border-right: 1px solid #2d2d2d;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .case-hero {
+        padding-top: 65px;
+      }
+
+      .case-facts {
+        display: block;
+      }
+
+      .main-image {
+        max-height: 430px;
+      }
+    }
+  
+
+    /* =========================
+       Law-page additions
+    ========================= */
+
+    .law-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .law-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 310px;
+      padding: 26px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .law-card:hover {
+      border-color: #6f4545;
+    }
+
+    .law-card .law-type {
+      margin-bottom: 12px;
+      color: #e06a6a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .law-card h3 {
+      margin: 0 0 14px;
+      color: #f4f4f4;
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    .law-card p {
+      margin: 0 0 20px;
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    .law-meta {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #323232;
+      color: #8f8f8f;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .law-link {
+      display: inline-block;
+      margin-top: 13px;
+      color: #ee7878;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .law-link:hover {
+      text-decoration: underline;
+    }
+
+    .scope-table {
+      width: 100%;
+      margin-top: 25px;
+      border-collapse: collapse;
+      border: 1px solid #383838;
+      background: #191919;
+    }
+
+    .scope-table th,
+    .scope-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid #353535;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .scope-table th {
+      color: #f0f0f0;
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    .scope-table td {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    .scope-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .source-card .source-language {
+      display: block;
+      margin-top: 6px;
+      color: #858585;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .law-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scope-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+  
+  
+  
+
+    /* =========================
+       News coverage index
+    ========================= */
+
+    .archive-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .archive-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .archive-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .archive-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .outlet-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .outlet-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .outlet-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .outlet-heading p {
+      max-width: 520px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .outlet-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .coverage-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .coverage-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 145px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .coverage-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .coverage-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .coverage-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .coverage-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .coverage-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .coverage-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .coverage-link:hover {
+      text-decoration: underline;
+    }
+
+    .case-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .archive-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .archive-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .outlet-heading {
+        display: block;
+      }
+
+      .outlet-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .coverage-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .coverage-meta {
+        text-align: left;
+      }
+    }
+
+  
+
+    /* =========================
+       Government records index
+    ========================= */
+
+    .record-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .record-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .record-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .record-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .record-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .record-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .record-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .record-heading p {
+      max-width: 560px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .record-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .record-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .record-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 160px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .record-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .record-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .record-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .record-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .record-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .record-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .record-link:hover {
+      text-decoration: underline;
+    }
+
+    .case-tag,
+    .status-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .status-tag.available {
+      border-color: #42614b;
+      color: #8fc79c;
+    }
+
+    .status-tag.limited {
+      border-color: #695b3e;
+      color: #d5bb7b;
+    }
+
+    .status-tag.not-archived {
+      border-color: #684141;
+      color: #df8a8a;
+    }
+
+    .empty-record {
+      padding: 20px;
+      border: 1px dashed #3d3d3d;
+      color: #979797;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .record-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .record-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .record-heading {
+        display: block;
+      }
+
+      .record-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .record-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .record-meta {
+        text-align: left;
+      }
+    }
+
+  
+
+    /* =========================
+       Resource index additions
+    ========================= */
+
+    .resource-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .resource-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .resource-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .resource-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .resource-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .resource-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .resource-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .resource-heading p {
+      max-width: 560px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .resource-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .resource-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .resource-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 170px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .resource-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .resource-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .resource-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .resource-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .resource-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .resource-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .resource-link:hover {
+      text-decoration: underline;
+    }
+
+    .topic-tag,
+    .status-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .status-tag.available {
+      border-color: #42614b;
+      color: #8fc79c;
+    }
+
+    .status-tag.pending {
+      border-color: #695b3e;
+      color: #d5bb7b;
+    }
+
+    .status-tag.external {
+      border-color: #4a5269;
+      color: #9eb0df;
+    }
+
+    .citation-text {
+      margin-top: 10px;
+      padding: 12px;
+      border-left: 2px solid #4a4a4a;
+      background: #151515;
+      color: #8f8f8f;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 900px) {
+      .resource-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .resource-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .resource-heading {
+        display: block;
+      }
+
+      .resource-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .resource-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .resource-meta {
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+    <a class="site-name" href="index.html">
+      Voices For Animals CN
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="laws.html">Laws</a>
+      <a href="index.html#media">Media</a>
+      <a href="index.html#petitions">Advocacy</a>
+    </div>
+  </nav>
+
+  <header class="case-hero">
+    <div class="case-hero-inner">
+
+      <div class="case-label">
+        Digital Preservation
+      </div>
+
+      <h1>
+        Archived Sources
+      </h1>
+
+      <p class="case-subtitle">
+        A preservation index for webpages, social-media posts,
+        screenshots, documents, and historical references that may
+        become unavailable or difficult to locate.
+      </p>
+
+      <span class="status-badge">
+        Preservation Register · Developing
+      </span>
+
+    </div>
+  </header>
+
+  <main class="page-layout">
+
+    <aside class="case-sidebar">
+
+      <div class="case-facts">
+        <h2>Archive Information</h2>
+
+        <div class="fact-row">
+          <span class="fact-label">Purpose</span>
+          <span class="fact-value">
+            Preserve source identity, context, and access history
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Material Types</span>
+          <span class="fact-value">
+            Webpages, posts, screenshots, PDFs, metadata
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Copyright</span>
+          <span class="fact-value">
+            Remains with original publishers and creators
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Public Copies</span>
+          <span class="fact-value">
+            Added only when lawful and appropriate
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Last Reviewed</span>
+          <span class="fact-value">
+            26 July 2026
+          </span>
+        </div>
+      </div>
+
+      <nav class="contents-box">
+        <h2>On This Page</h2>
+
+        <a href="#overview">Overview</a>
+        <a href="#register">Preservation Register</a>
+        <a href="#webpages">Webpages &amp; Articles</a>
+        <a href="#social">Social-Media Sources</a>
+        <a href="#screenshots">Screenshots &amp; Files</a>
+        <a href="#standards">Preservation Standards</a>
+        <a href="#requests">Corrections &amp; Removal</a>
+        <a href="#verification">Verification Notes</a>
+        <a href="#updates">Archive Updates</a>
+      </nav>
+
+    </aside>
+
+    <article class="case-article">
+
+      <section class="content-section" id="overview">
+        <h2>Overview</h2>
+
+        <p>
+          Online evidence is fragile. News pages can be moved,
+          social-media posts can be deleted, account names can change,
+          and screenshots can circulate without dates or context.
+        </p>
+
+        <p>
+          This page records the preservation status of sources used by
+          Voices For Animals CN. Its purpose is not to republish full
+          copyrighted works, but to retain enough information to identify,
+          verify, and locate the original material.
+        </p>
+
+        <p>
+          When appropriate, an entry may include the original URL,
+          publication date, author or account name, access date,
+          archived URL, file name, screenshot description, language,
+          and connection to a documented case.
+        </p>
+
+        <div class="resource-summary">
+          <div class="resource-stat">
+            <strong>4</strong>
+            <span>Preservation categories</span>
+          </div>
+
+          <div class="resource-stat">
+            <strong>5</strong>
+            <span>Cases monitored</span>
+          </div>
+
+          <div class="resource-stat">
+            <strong>0</strong>
+            <span>Public local copies listed</span>
+          </div>
+
+          <div class="resource-stat">
+            <strong>Developing</strong>
+            <span>Register status</span>
+          </div>
+        </div>
+
+        <div class="content-warning">
+          <strong>No automatic republication</strong>
+
+          <p>
+            Saving a source for verification does not automatically
+            authorize public redistribution. Full articles, private
+            information, graphic material, and personal social-media
+            content are not republished solely because they are relevant
+            to an archived case.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="register">
+        <h2>Preservation Register</h2>
+
+        <table class="scope-table">
+          <thead>
+            <tr>
+              <th>Material</th>
+              <th>Current Status</th>
+              <th>Public Access</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Original news and organization webpages</td>
+              <td>
+                Original links indexed in News Coverage.
+              </td>
+              <td>
+                Links direct readers to the publisher.
+              </td>
+            </tr>
+            <tr>
+              <td>Official government and legal pages</td>
+              <td>
+                Original links indexed in Government Records.
+              </td>
+              <td>
+                Links direct readers to official websites.
+              </td>
+            </tr>
+            <tr>
+              <td>2026 Laizhou Instagram posts</td>
+              <td>
+                Original public post links recorded; preservation pending.
+              </td>
+              <td>
+                Subject to the account and platform remaining available.
+              </td>
+            </tr>
+            <tr>
+              <td>Case photographs used by this website</td>
+              <td>
+                Local display files maintained with descriptive captions.
+              </td>
+              <td>
+                Displayed only where included on case pages.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="content-section" id="webpages">
+        <h2>Webpages &amp; Articles</h2>
+
+        <div class="resource-group">
+          <div class="resource-heading">
+            <div>
+              <h3>Publisher-Hosted Sources</h3>
+              <p>
+                News articles, organization reports, official pages,
+                and other sources that remain available at their
+                original URLs.
+              </p>
+            </div>
+
+            <span class="resource-type">Original URLs</span>
+          </div>
+
+          <div class="resource-list">
+
+            <article class="resource-entry">
+              <div>
+                <span class="topic-tag">News Coverage</span>
+                <span class="status-tag available">Indexed</span>
+
+                <h4>
+                  Original publisher links
+                </h4>
+
+                <p>
+                  BBC News, New York Times Chinese, Sixth Tone,
+                  Taiwan News, Channel NewsAsia, What's on Weibo,
+                  China News Service, and Humane World sources are
+                  indexed on the News Coverage page.
+                </p>
+
+                <a class="resource-link" href="news-coverage.html">
+                  Open News Coverage index →
+                </a>
+              </div>
+
+              <div class="resource-meta">
+                <strong>Multiple Publishers</strong>
+                Original links
+                <br>
+                Access may change
+              </div>
+            </article>
+
+            <article class="resource-entry">
+              <div>
+                <span class="topic-tag">Official Records</span>
+                <span class="status-tag available">Indexed</span>
+
+                <h4>
+                  Government and legal source links
+                </h4>
+
+                <p>
+                  Ministry responses, legislative materials, and legal
+                  texts are indexed separately from media reporting.
+                </p>
+
+                <a class="resource-link" href="government-records.html">
+                  Open Government Records index →
+                </a>
+              </div>
+
+              <div class="resource-meta">
+                <strong>Public Institutions</strong>
+                Official URLs
+                <br>
+                Chinese-language sources
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="content-note">
+          <p>
+            An archived URL should be added only after confirming that
+            the capture corresponds to the same article, date, publisher,
+            and page version referenced by the case page.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="social">
+        <h2>Social-Media Sources</h2>
+
+        <div class="resource-group">
+          <div class="resource-heading">
+            <div>
+              <h3>2026 Laizhou Cat Rescue</h3>
+              <p>
+                Public Instagram posts used as preliminary documentation
+                for a developing rescue case.
+              </p>
+            </div>
+
+            <span class="resource-type">Social Media</span>
+          </div>
+
+          <div class="resource-list">
+
+            <article class="resource-entry">
+              <div>
+                <span class="topic-tag">Cat Transport</span>
+                <span class="topic-tag">Instagram</span>
+                <span class="status-tag pending">Preservation Pending</span>
+
+                <h4>
+                  English-language rescue update
+                </h4>
+
+                <p>
+                  Public reel containing rescue footage and an English
+                  explanation. The original post remains the principal
+                  reference; no public local copy is listed here.
+                </p>
+
+                <a
+                  class="resource-link"
+                  href="https://www.instagram.com/reel/DbIwN4sgkQL/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View original post →
+                </a>
+              </div>
+
+              <div class="resource-meta">
+                <strong>Instagram Reel</strong>
+                July 2026
+                <br>
+                Original link recorded
+              </div>
+            </article>
+
+            <article class="resource-entry">
+              <div>
+                <span class="topic-tag">Cat Transport</span>
+                <span class="topic-tag">Instagram</span>
+                <span class="status-tag pending">Preservation Pending</span>
+
+                <h4>
+                  Related footage and missing-cat claims
+                </h4>
+
+                <p>
+                  Supplementary public post associated with the developing
+                  Laizhou rescue. Claims remain subject to independent
+                  confirmation.
+                </p>
+
+                <a
+                  class="resource-link"
+                  href="https://www.instagram.com/reel/DbGp09IpOh6/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View original post →
+                </a>
+              </div>
+
+              <div class="resource-meta">
+                <strong>Instagram Reel</strong>
+                July 2026
+                <br>
+                Original link recorded
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="content-warning">
+          <strong>Social-media limitations</strong>
+
+          <p>
+            Posts may be edited or removed, account ownership may be
+            difficult to establish, captions may be translated, and
+            reposted footage may not preserve its original date or context.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="screenshots">
+        <h2>Screenshots &amp; Files</h2>
+
+        <div class="resource-group">
+          <div class="resource-heading">
+            <div>
+              <h3>Local Preservation Materials</h3>
+              <p>
+                Screenshots, downloaded files, image captions,
+                source notes, and other materials retained for
+                verification or site display.
+              </p>
+            </div>
+
+            <span class="resource-type">Local Archive</span>
+          </div>
+
+          <div class="resource-list">
+
+            <article class="resource-entry">
+              <div>
+                <span class="topic-tag">Case Images</span>
+                <span class="status-tag available">Site Files</span>
+
+                <h4>
+                  Images displayed on case pages
+                </h4>
+
+                <p>
+                  Local image files are referenced by their case pages
+                  and accompanied by captions describing their source
+                  or illustrative status when known.
+                </p>
+              </div>
+
+              <div class="resource-meta">
+                <strong>Website Repository</strong>
+                Images directory
+                <br>
+                Public display files
+              </div>
+            </article>
+
+            <article class="resource-entry">
+              <div>
+                <span class="topic-tag">Evidence Files</span>
+                <span class="status-tag pending">Not Publicly Listed</span>
+
+                <h4>
+                  Verification screenshots and working notes
+                </h4>
+
+                <p>
+                  Internal verification material should record the date,
+                  source account or publisher, original URL, visible
+                  content, and reason for preservation.
+                </p>
+              </div>
+
+              <div class="resource-meta">
+                <strong>Internal Research</strong>
+                Access restricted
+                <br>
+                Privacy and copyright review
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="standards">
+        <h2>Preservation Standards</h2>
+
+        <table class="scope-table">
+          <thead>
+            <tr>
+              <th>Field</th>
+              <th>Recommended Record</th>
+              <th>Reason</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Source identity</td>
+              <td>
+                Publisher, institution, creator, or account name.
+              </td>
+              <td>
+                Establishes who made the material public.
+              </td>
+            </tr>
+            <tr>
+              <td>Original location</td>
+              <td>
+                Full original URL and platform.
+              </td>
+              <td>
+                Allows comparison with the live source.
+              </td>
+            </tr>
+            <tr>
+              <td>Dates</td>
+              <td>
+                Publication date, update date, and archive access date.
+              </td>
+              <td>
+                Preserves chronology and version history.
+              </td>
+            </tr>
+            <tr>
+              <td>Context</td>
+              <td>
+                Case connection, language, caption, and surrounding text.
+              </td>
+              <td>
+                Reduces the risk of presenting material out of context.
+              </td>
+            </tr>
+            <tr>
+              <td>Integrity</td>
+              <td>
+                Original file name, file type, dimensions, and checksum
+                where appropriate.
+              </td>
+              <td>
+                Helps detect accidental changes or file replacement.
+              </td>
+            </tr>
+            <tr>
+              <td>Access status</td>
+              <td>
+                Live, removed, restricted, archived, or unverified.
+              </td>
+              <td>
+                Makes preservation limitations transparent.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="content-section" id="requests">
+        <h2>Corrections, Privacy, and Removal</h2>
+
+        <p>
+          Preservation must be balanced against privacy, personal safety,
+          copyright, and the interests of pet owners and other directly
+          affected people.
+        </p>
+
+        <p>
+          Personal phone numbers, private addresses, identification
+          documents, medical information, graphic images, and unrelated
+          personal content should not be made public merely because they
+          appear in an original post.
+        </p>
+
+        <p>
+          Pet owners, creators, publishers, and directly affected parties
+          may request correction of attribution, additional context,
+          replacement of an inaccurate copy, or removal of personal
+          material from the public website.
+        </p>
+
+        <div class="content-note">
+          <p>
+            Removal from the public website does not necessarily require
+            deletion of a minimal private research record needed to
+            document what was previously published, provided retention
+            is lawful, secure, and proportionate.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="verification">
+        <h2>Verification Notes</h2>
+
+        <div class="content-note">
+          <p>
+            A screenshot alone does not prove authenticity. Whenever
+            possible, it should be matched to an original URL, account,
+            publication date, archive capture, or independent source.
+          </p>
+
+          <p>
+            Archived copies may omit videos, comments, interactive
+            elements, edits, or later corrections. The preserved version
+            should be identified by date and capture method.
+          </p>
+
+          <p>
+            Translations should be labeled as translations and should
+            preserve distinctions between allegation, report,
+            confirmation, and official finding.
+          </p>
+
+          <p>
+            This page records preservation status. It does not certify
+            every listed source as accurate or complete.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="updates">
+        <h2>Archive Updates</h2>
+
+        <div class="case-timeline">
+          <article class="timeline-event">
+            <span class="timeline-date">
+              26 July 2026
+            </span>
+
+            <h3>Digital preservation register created</h3>
+
+            <p>
+              Added preservation categories, the current status of
+              webpage and social-media sources, recommended metadata,
+              privacy guidance, and verification standards.
+            </p>
+          </article>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <div class="case-footer-navigation">
+    <a href="research-publications.html">
+      ← Previous: Academic Publications
+    </a>
+
+    <a href="index.html#media">
+      Back to Media Archive →
+    </a>
+  </div>
+
+  <footer>
+    Voices For Animals CN · Independent documentation archive
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Practical guidance for supporting responsible animal welfare reporting, preserving evidence, sharing information safely, and participating in lawful advocacy."
+  >
+
+  <title>
+    How You Can Help | Voices For Animals CN
+  </title>
+
+  <style>
+
+
+
+
+
+
+
+    /* =========================
+       Basic settings
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    section {
+      scroll-margin-top: 90px;
+    }
+
+    /* =========================
+       Navigation
+    ========================= */
+
+    .site-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+
+      width: 100%;
+      padding: 18px 5%;
+
+      border-bottom: 1px solid #303030;
+      background: rgba(17, 17, 17, 0.96);
+      backdrop-filter: blur(12px);
+    }
+
+    .site-name {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #c8c8c8;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Case hero
+    ========================= */
+
+    .case-hero {
+      padding: 90px 24px 55px;
+      border-bottom: 1px solid #2e2e2e;
+      background:
+        linear-gradient(
+          135deg,
+          #171717,
+          #101010
+        );
+    }
+
+    .case-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .case-label {
+      margin-bottom: 16px;
+      color: #e06666;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+
+    .case-hero h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: clamp(43px, 7vw, 78px);
+      line-height: 1.03;
+      letter-spacing: -1.5px;
+    }
+
+    .case-subtitle {
+      max-width: 780px;
+      margin: 24px 0 0;
+      color: #c8c8c8;
+      font-size: clamp(18px, 2.2vw, 23px);
+    }
+
+    .status-badge {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 8px 13px;
+
+      border: 1px solid #784848;
+      background: #291919;
+
+      color: #f08a8a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* =========================
+       Main image
+    ========================= */
+
+    .image-section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 20px;
+    }
+
+    .main-image {
+      display: block;
+      width: 100%;
+      max-height: 680px;
+      object-fit: cover;
+
+      border: 1px solid #343434;
+      background: #1e1e1e;
+    }
+
+    .image-caption {
+      margin: 12px 0 0;
+      color: #8f8f8f;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Page layout
+    ========================= */
+
+    .page-layout {
+      display: grid;
+      grid-template-columns: 245px minmax(0, 1fr);
+      gap: 65px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 55px 24px 100px;
+    }
+
+    /* =========================
+       Sidebar
+    ========================= */
+
+    .case-sidebar {
+      align-self: start;
+      position: sticky;
+      top: 100px;
+    }
+
+    .case-facts {
+      overflow: hidden;
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .case-facts h2 {
+      margin: 0;
+      padding: 18px 20px;
+
+      border-bottom: 1px solid #343434;
+
+      font-size: 17px;
+    }
+
+    .fact-row {
+      padding: 15px 20px;
+      border-bottom: 1px solid #2d2d2d;
+    }
+
+    .fact-row:last-child {
+      border-bottom: none;
+    }
+
+    .fact-label {
+      display: block;
+      margin-bottom: 3px;
+
+      color: #858585;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .fact-value {
+      color: #ededed;
+      font-size: 14px;
+    }
+
+    .contents-box {
+      margin-top: 24px;
+      padding: 20px;
+
+      border: 1px solid #343434;
+      background: #191919;
+    }
+
+    .contents-box h2 {
+      margin: 0 0 12px;
+      font-size: 16px;
+    }
+
+    .contents-box a {
+      display: block;
+      padding: 5px 0;
+
+      color: #bdbdbd;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .contents-box a:hover {
+      color: #e76d6d;
+    }
+
+    /* =========================
+       Article
+    ========================= */
+
+    .case-article {
+      min-width: 0;
+    }
+
+    .content-section {
+      padding: 0 0 54px;
+      margin-bottom: 54px;
+      border-bottom: 1px solid #303030;
+    }
+
+    .content-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-section h2 {
+      margin: 0 0 22px;
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.2;
+    }
+
+    .content-section h3 {
+      margin: 28px 0 9px;
+      font-size: 21px;
+    }
+
+    .content-section p {
+      margin: 0 0 18px;
+      color: #cccccc;
+      font-size: 17px;
+    }
+
+    .content-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .content-note {
+      padding: 20px 22px;
+      border-left: 3px solid #d45e5e;
+      background: #191919;
+    }
+
+    /* =========================
+       Timeline
+    ========================= */
+
+    .case-timeline {
+      position: relative;
+      margin-top: 30px;
+      padding-left: 31px;
+    }
+
+    .case-timeline::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 7px;
+
+      width: 2px;
+      background: #3b3b3b;
+    }
+
+    .timeline-event {
+      position: relative;
+      padding: 0 0 38px 22px;
+    }
+
+    .timeline-event:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-event::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: -30px;
+
+      width: 14px;
+      height: 14px;
+
+      border: 3px solid #111;
+      border-radius: 50%;
+
+      background: #dc6262;
+      box-shadow: 0 0 0 2px #dc6262;
+    }
+
+    .timeline-date {
+      display: block;
+      margin-bottom: 5px;
+
+      color: #e36e6e;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .timeline-event h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+    }
+
+    .timeline-event p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    /* =========================
+       Sources
+    ========================= */
+
+    .source-list {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .source-card {
+      display: block;
+      padding: 22px;
+
+      border: 1px solid #343434;
+      background: #191919;
+
+      text-decoration: none;
+
+      transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+    }
+
+    .source-card:hover {
+      transform: translateY(-3px);
+      border-color: #d45e5e;
+    }
+
+    .source-name {
+      display: block;
+      margin-bottom: 4px;
+
+      color: #e36e6e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .source-title {
+      display: block;
+      color: #f0f0f0;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+
+    .source-date {
+      display: block;
+      margin-top: 7px;
+      color: #8e8e8e;
+      font-size: 13px;
+    }
+
+    /* =========================
+       Warning
+    ========================= */
+
+    .content-warning {
+      padding: 22px;
+      border: 1px solid #614242;
+      background: #241919;
+    }
+
+    .content-warning strong {
+      display: block;
+      margin-bottom: 7px;
+      color: #ef8c8c;
+    }
+
+    .content-warning p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    /* =========================
+       Footer navigation
+    ========================= */
+
+    .case-footer-navigation {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .case-footer-navigation a {
+      display: inline-block;
+      padding: 12px 18px;
+
+      border: 1px solid #414141;
+
+      color: #e6e6e6;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .case-footer-navigation a:hover {
+      border-color: #d45e5e;
+      background: #d45e5e;
+      color: #fff;
+    }
+
+    footer {
+      padding: 35px 24px;
+      border-top: 1px solid #303030;
+
+      color: #818181;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    /* =========================
+       Tablet and mobile
+    ========================= */
+
+    @media (max-width: 850px) {
+      .page-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+      }
+
+      .case-sidebar {
+        position: static;
+      }
+
+      .case-facts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .case-facts h2 {
+        grid-column: 1 / -1;
+      }
+
+      .fact-row {
+        border-right: 1px solid #2d2d2d;
+      }
+    }
+
+    @media (max-width: 650px) {
+      .site-nav {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+        padding: 16px 20px;
+      }
+
+      .nav-links {
+        gap: 13px;
+      }
+
+      .case-hero {
+        padding-top: 65px;
+      }
+
+      .case-facts {
+        display: block;
+      }
+
+      .main-image {
+        max-height: 430px;
+      }
+    }
+  
+
+    /* =========================
+       Law-page additions
+    ========================= */
+
+    .law-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .law-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 310px;
+      padding: 26px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .law-card:hover {
+      border-color: #6f4545;
+    }
+
+    .law-card .law-type {
+      margin-bottom: 12px;
+      color: #e06a6a;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .law-card h3 {
+      margin: 0 0 14px;
+      color: #f4f4f4;
+      font-size: 25px;
+      line-height: 1.25;
+    }
+
+    .law-card p {
+      margin: 0 0 20px;
+      color: #bcbcbc;
+      font-size: 15px;
+    }
+
+    .law-meta {
+      margin-top: auto;
+      padding-top: 18px;
+      border-top: 1px solid #323232;
+      color: #8f8f8f;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .law-link {
+      display: inline-block;
+      margin-top: 13px;
+      color: #ee7878;
+      font-size: 14px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .law-link:hover {
+      text-decoration: underline;
+    }
+
+    .scope-table {
+      width: 100%;
+      margin-top: 25px;
+      border-collapse: collapse;
+      border: 1px solid #383838;
+      background: #191919;
+    }
+
+    .scope-table th,
+    .scope-table td {
+      padding: 16px 18px;
+      border-bottom: 1px solid #353535;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .scope-table th {
+      color: #f0f0f0;
+      font-size: 13px;
+      letter-spacing: 0.7px;
+      text-transform: uppercase;
+    }
+
+    .scope-table td {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    .scope-table tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .source-card .source-language {
+      display: block;
+      margin-top: 6px;
+      color: #858585;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .law-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scope-table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+
+  
+  
+  
+
+    /* =========================
+       News coverage index
+    ========================= */
+
+    .archive-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .archive-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .archive-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .archive-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .outlet-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .outlet-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .outlet-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .outlet-heading p {
+      max-width: 520px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .outlet-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .coverage-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .coverage-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 145px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .coverage-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .coverage-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .coverage-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .coverage-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .coverage-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .coverage-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .coverage-link:hover {
+      text-decoration: underline;
+    }
+
+    .case-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 900px) {
+      .archive-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .archive-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .outlet-heading {
+        display: block;
+      }
+
+      .outlet-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .coverage-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .coverage-meta {
+        text-align: left;
+      }
+    }
+
+  
+
+    /* =========================
+       Government records index
+    ========================= */
+
+    .record-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .record-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .record-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .record-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .record-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .record-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .record-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .record-heading p {
+      max-width: 560px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .record-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .record-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .record-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 160px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .record-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .record-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .record-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .record-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .record-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .record-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .record-link:hover {
+      text-decoration: underline;
+    }
+
+    .case-tag,
+    .status-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .status-tag.available {
+      border-color: #42614b;
+      color: #8fc79c;
+    }
+
+    .status-tag.limited {
+      border-color: #695b3e;
+      color: #d5bb7b;
+    }
+
+    .status-tag.not-archived {
+      border-color: #684141;
+      color: #df8a8a;
+    }
+
+    .empty-record {
+      padding: 20px;
+      border: 1px dashed #3d3d3d;
+      color: #979797;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .record-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .record-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .record-heading {
+        display: block;
+      }
+
+      .record-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .record-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .record-meta {
+        text-align: left;
+      }
+    }
+
+  
+
+    /* =========================
+       Resource index additions
+    ========================= */
+
+    .resource-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .resource-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .resource-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .resource-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .resource-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .resource-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .resource-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .resource-heading p {
+      max-width: 560px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .resource-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .resource-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .resource-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 170px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .resource-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .resource-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .resource-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .resource-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .resource-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .resource-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .resource-link:hover {
+      text-decoration: underline;
+    }
+
+    .topic-tag,
+    .status-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .status-tag.available {
+      border-color: #42614b;
+      color: #8fc79c;
+    }
+
+    .status-tag.pending {
+      border-color: #695b3e;
+      color: #d5bb7b;
+    }
+
+    .status-tag.external {
+      border-color: #4a5269;
+      color: #9eb0df;
+    }
+
+    .citation-text {
+      margin-top: 10px;
+      padding: 12px;
+      border-left: 2px solid #4a4a4a;
+      background: #151515;
+      color: #8f8f8f;
+      font-family: "Courier New", monospace;
+      font-size: 12px;
+      line-height: 1.6;
+      overflow-wrap: anywhere;
+    }
+
+    @media (max-width: 900px) {
+      .resource-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .resource-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .resource-heading {
+        display: block;
+      }
+
+      .resource-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .resource-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .resource-meta {
+        text-align: left;
+      }
+    }
+
+  
+
+    /* =========================
+       Advocacy page additions
+    ========================= */
+
+    .advocacy-summary {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .advocacy-stat {
+      padding: 20px;
+      border: 1px solid #373737;
+      background: #191919;
+    }
+
+    .advocacy-stat strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #f1f1f1;
+      font-size: 28px;
+      line-height: 1;
+    }
+
+    .advocacy-stat span {
+      color: #9f9f9f;
+      font-size: 12px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .advocacy-group {
+      margin-top: 28px;
+      padding: 26px;
+      border: 1px solid #353535;
+      background: #181818;
+    }
+
+    .advocacy-heading {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #333;
+    }
+
+    .advocacy-heading h3 {
+      margin: 0;
+      color: #f4f4f4;
+      font-size: 26px;
+      line-height: 1.25;
+    }
+
+    .advocacy-heading p {
+      max-width: 560px;
+      margin: 5px 0 0;
+      color: #9f9f9f;
+      font-size: 14px;
+    }
+
+    .advocacy-type {
+      flex: 0 0 auto;
+      padding: 5px 9px;
+      border: 1px solid #684141;
+      color: #e47878;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    .advocacy-list {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .advocacy-entry {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 175px;
+      gap: 24px;
+      padding: 18px 0;
+      border-bottom: 1px solid #303030;
+    }
+
+    .advocacy-entry:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .advocacy-entry h4 {
+      margin: 0 0 7px;
+      color: #ededed;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .advocacy-entry p {
+      margin: 0;
+      color: #a9a9a9;
+      font-size: 14px;
+    }
+
+    .advocacy-meta {
+      color: #8e8e8e;
+      font-size: 12px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .advocacy-meta strong {
+      display: block;
+      color: #d8d8d8;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .advocacy-link {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ee7878;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .advocacy-link:hover {
+      text-decoration: underline;
+    }
+
+    .topic-tag,
+    .status-tag {
+      display: inline-block;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      padding: 3px 7px;
+      border: 1px solid #414141;
+      color: #bcbcbc;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .status-tag.third-party {
+      border-color: #695b3e;
+      color: #d5bb7b;
+    }
+
+    .status-tag.organization {
+      border-color: #42614b;
+      color: #8fc79c;
+    }
+
+    .status-tag.guide {
+      border-color: #4a5269;
+      color: #9eb0df;
+    }
+
+    .step-list {
+      counter-reset: advocacy-step;
+      display: grid;
+      gap: 18px;
+      margin-top: 26px;
+    }
+
+    .step-card {
+      position: relative;
+      padding: 24px 24px 24px 74px;
+      border: 1px solid #363636;
+      background: #191919;
+    }
+
+    .step-card::before {
+      counter-increment: advocacy-step;
+      content: counter(advocacy-step);
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid #744545;
+      color: #e77878;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .step-card h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+    }
+
+    .step-card p {
+      margin: 0;
+      color: #adadad;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .advocacy-summary {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .advocacy-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .advocacy-heading {
+        display: block;
+      }
+
+      .advocacy-type {
+        display: inline-block;
+        margin-top: 14px;
+      }
+
+      .advocacy-entry {
+        grid-template-columns: 1fr;
+      }
+
+      .advocacy-meta {
+        text-align: left;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="site-nav">
+    <a class="site-name" href="index.html">
+      Voices For Animals CN
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#cases">Cases</a>
+      <a href="laws.html">Laws</a>
+      <a href="index.html#media">Media</a>
+      <a href="index.html#petitions">Advocacy</a>
+    </div>
+  </nav>
+
+  <header class="case-hero">
+    <div class="case-hero-inner">
+
+      <div class="case-label">
+        Get Involved
+      </div>
+
+      <h1>
+        How You Can Help
+      </h1>
+
+      <p class="case-subtitle">
+        Practical ways to support responsible reporting,
+        preserve reliable information, promote animal welfare,
+        and participate in lawful, evidence-based advocacy.
+      </p>
+
+      <span class="status-badge">
+        Safety &amp; Documentation Guide
+      </span>
+
+    </div>
+  </header>
+
+  <main class="page-layout">
+
+    <aside class="case-sidebar">
+
+      <div class="case-facts">
+        <h2>Guide Information</h2>
+
+        <div class="fact-row">
+          <span class="fact-label">Priority</span>
+          <span class="fact-value">
+            Human and animal safety
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Approach</span>
+          <span class="fact-value">
+            Lawful, evidence-based, non-harassing
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Documentation</span>
+          <span class="fact-value">
+            Preserve originals, dates, URLs, and context
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Privacy</span>
+          <span class="fact-value">
+            Do not expose private personal information
+          </span>
+        </div>
+
+        <div class="fact-row">
+          <span class="fact-label">Last Reviewed</span>
+          <span class="fact-value">
+            26 July 2026
+          </span>
+        </div>
+      </div>
+
+      <nav class="contents-box">
+        <h2>On This Page</h2>
+
+        <a href="#overview">Overview</a>
+        <a href="#document">Document Responsibly</a>
+        <a href="#preserve">Preserve Sources</a>
+        <a href="#share">Share Carefully</a>
+        <a href="#report">Report Through Appropriate Channels</a>
+        <a href="#support">Support Responsible Organizations</a>
+        <a href="#avoid">What to Avoid</a>
+        <a href="#tools">Useful Tools</a>
+        <a href="#verification">Verification Notes</a>
+      </nav>
+
+    </aside>
+
+    <article class="case-article">
+
+      <section class="content-section" id="overview">
+        <h2>Overview</h2>
+
+        <p>
+          Effective advocacy begins with accurate information,
+          proportional action, and respect for the safety and privacy
+          of everyone directly affected.
+        </p>
+
+        <p>
+          Sharing an unverified allegation, exposing a private address,
+          encouraging confrontation, or identifying the wrong person
+          can cause serious harm and weaken legitimate efforts to protect animals.
+        </p>
+
+        <p>
+          The steps below focus on documentation, preservation,
+          responsible sharing, appropriate reporting, and support for
+          established organizations.
+        </p>
+
+        <div class="content-warning">
+          <strong>Do not place yourself or an animal in additional danger</strong>
+
+          <p>
+            Do not trespass, pursue vehicles, confront suspected offenders,
+            interfere with an active police response, or attempt a rescue
+            beyond your training and legal authority.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="document">
+        <h2>Document Responsibly</h2>
+
+        <div class="step-list">
+          <article class="step-card">
+            <h3>Record the original source</h3>
+            <p>
+              Save the full URL, account or publisher name,
+              visible publication date, access date, language,
+              and the specific claim the material supports.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <h3>Keep original files when lawfully available</h3>
+            <p>
+              Avoid repeatedly editing, cropping, compressing,
+              or adding text over the only copy. Keep a separate
+              unmodified original and create edited copies for publication.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <h3>Preserve context</h3>
+            <p>
+              Record surrounding captions, preceding and following posts,
+              location claims, time references, and whether the material
+              is first-hand, reposted, translated, or anonymous.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <h3>Separate observation from conclusion</h3>
+            <p>
+              Describe what is visibly documented before stating
+              what may have happened. Label allegations, estimates,
+              translations, and unconfirmed identities clearly.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="preserve">
+        <h2>Preserve Sources</h2>
+
+        <p>
+          The Internet Archive's Wayback Machine offers a “Save Page Now”
+          function for capturing an individual webpage. It may not preserve
+          every image, video, comment, login-only page, or interactive element.
+        </p>
+
+        <p>
+          WITNESS publishes an Activists' Guide to Archiving Video,
+          including guidance on planning, metadata, storage,
+          file organization, and long-term preservation.
+        </p>
+
+        <div class="advocacy-group">
+          <div class="advocacy-heading">
+            <div>
+              <h3>Minimum Preservation Record</h3>
+              <p>
+                Information to keep even when a full archive capture
+                is unavailable.
+              </p>
+            </div>
+
+            <span class="advocacy-type">Documentation</span>
+          </div>
+
+          <div class="advocacy-list">
+            <article class="advocacy-entry">
+              <div>
+                <span class="topic-tag">Metadata</span>
+                <span class="status-tag guide">Recommended</span>
+
+                <h4>Source identity and chronology</h4>
+
+                <p>
+                  Publisher or account, original URL, title or caption,
+                  visible date, access date, language, case connection,
+                  and a brief explanation of what the source documents.
+                </p>
+              </div>
+
+              <div class="advocacy-meta">
+                <strong>Preservation Record</strong>
+                Text metadata
+                <br>
+                Keep with files
+              </div>
+            </article>
+
+            <article class="advocacy-entry">
+              <div>
+                <span class="topic-tag">Integrity</span>
+                <span class="status-tag guide">Recommended</span>
+
+                <h4>Original file details</h4>
+
+                <p>
+                  Keep the original filename, format, dimensions,
+                  duration, creation or download date, and a checksum
+                  where appropriate.
+                </p>
+              </div>
+
+              <div class="advocacy-meta">
+                <strong>File Record</strong>
+                Technical metadata
+                <br>
+                Avoid silent replacement
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section" id="share">
+        <h2>Share Carefully</h2>
+
+        <div class="law-grid">
+          <article class="law-card">
+            <span class="law-type">Use Original Links</span>
+
+            <h3>Direct Readers to Sources</h3>
+
+            <p>
+              Link to the original article, official statement,
+              or public post whenever possible instead of circulating
+              detached screenshots.
+            </p>
+
+            <div class="law-meta">
+              Archived links may be added when the original becomes unavailable.
+            </div>
+          </article>
+
+          <article class="law-card">
+            <span class="law-type">Protect Privacy</span>
+
+            <h3>Remove Unnecessary Personal Information</h3>
+
+            <p>
+              Do not publish private addresses, phone numbers,
+              identification documents, unrelated family information,
+              or medical details.
+            </p>
+
+            <div class="law-meta">
+              Public-interest documentation does not require indiscriminate exposure.
+            </div>
+          </article>
+
+          <article class="law-card">
+            <span class="law-type">Use Accurate Language</span>
+
+            <h3>Label Uncertainty</h3>
+
+            <p>
+              Use terms such as “reported,” “alleged,” “according to,”
+              “preliminary,” and “not independently confirmed”
+              when the evidence requires them.
+            </p>
+
+            <div class="law-meta">
+              Do not present a rumor as an official finding.
+            </div>
+          </article>
+
+          <article class="law-card">
+            <span class="law-type">Avoid Graphic Repetition</span>
+
+            <h3>Use Content Warnings</h3>
+
+            <p>
+              Share only as much graphic material as is necessary
+              for documentation. Consider still images, descriptions,
+              blurring, and clear warnings.
+            </p>
+
+            <div class="law-meta">
+              Repeated graphic circulation can harm viewers and affected owners.
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" id="report">
+        <h2>Report Through Appropriate Channels</h2>
+
+        <p>
+          The correct reporting channel depends on location,
+          immediate danger, ownership, suspected theft, disease risk,
+          wildlife involvement, transport, food safety, and the
+          identity of the responsible authority.
+        </p>
+
+        <p>
+          Where safe and lawful, preserve evidence before reporting.
+          Provide concise facts: what happened, where, when,
+          which animals are involved, whether danger is ongoing,
+          and how the evidence was obtained.
+        </p>
+
+        <div class="content-note">
+          <p>
+            An international organization or online campaign may not
+            be able to dispatch local rescuers or compel government action.
+            Emergency situations generally require local authorities,
+            veterinary services, property owners, or established local
+            rescue networks.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="support">
+        <h2>Support Responsible Organizations</h2>
+
+        <p>
+          Support may include sharing verified educational material,
+          translating accurately, volunteering within your skills,
+          fostering through an established group, donating after
+          checking financial transparency, or helping preserve records.
+        </p>
+
+        <p>
+          Before sending money, confirm that the payment recipient
+          is authorized, the fundraiser identifies a responsible
+          organization or individual, updates are provided,
+          and the requested expenses are explained.
+        </p>
+
+        <a class="law-link" href="advocacy-resources.html">
+          View Organizations &amp; Resources →
+        </a>
+      </section>
+
+      <section class="content-section" id="avoid">
+        <h2>What to Avoid</h2>
+
+        <table class="scope-table">
+          <thead>
+            <tr>
+              <th>Avoid</th>
+              <th>Why</th>
+              <th>Safer Alternative</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Doxxing or publishing private details</td>
+              <td>
+                Can endanger uninvolved people and create legal risk.
+              </td>
+              <td>
+                Preserve privately and provide relevant details
+                only to appropriate authorities or verified investigators.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Harassment and threats</td>
+              <td>
+                Can escalate danger, undermine evidence,
+                and harm legitimate advocacy.
+              </td>
+              <td>
+                Use factual public communication and lawful reporting channels.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Identifying minors or alleged offenders without verification</td>
+              <td>
+                Creates privacy, safety, and misidentification risks.
+              </td>
+              <td>
+                Use non-identifying descriptions unless a reliable
+                public record lawfully establishes identity.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Reposting without source or date</td>
+              <td>
+                Removes context and makes verification difficult.
+              </td>
+              <td>
+                Share the original link, date, account,
+                and a clear source description.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Donating to an unverified personal account</td>
+              <td>
+                Funds may be misdirected or impossible to track.
+              </td>
+              <td>
+                Confirm authorization, identity, budget,
+                updates, and organization records.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="content-section" id="tools">
+        <h2>Useful Tools and Guides</h2>
+
+        <div class="source-list">
+          <a
+            class="source-card"
+            href="https://wayback.archive.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="source-name">Internet Archive</span>
+            <span class="source-title">Wayback Machine · Save Page Now</span>
+            <span class="source-date">
+              Capture an individual public webpage for future reference
+            </span>
+          </a>
+
+          <a
+            class="source-card"
+            href="https://help.archive.org/help/using-the-wayback-machine/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="source-name">Internet Archive Help Center</span>
+            <span class="source-title">Using the Wayback Machine</span>
+            <span class="source-date">
+              Official explanation of capture limits and page access
+            </span>
+          </a>
+
+          <a
+            class="source-card"
+            href="https://archiving.witness.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="source-name">WITNESS</span>
+            <span class="source-title">Archiving Video for Human Rights</span>
+            <span class="source-date">
+              Metadata, planning, storage, and preservation guidance
+            </span>
+          </a>
+
+          <a
+            class="source-card"
+            href="archived-sources.html"
+          >
+            <span class="source-name">Voices For Animals CN</span>
+            <span class="source-title">Archived Sources</span>
+            <span class="source-date">
+              This archive's preservation register and standards
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="content-section" id="verification">
+        <h2>Verification Notes</h2>
+
+        <div class="content-note">
+          <p>
+            This page provides general documentation and advocacy guidance.
+            It is not legal advice, emergency-response instruction,
+            or a guarantee that any reporting channel will act.
+          </p>
+
+          <p>
+            Internet Archive captures and screenshots may be useful
+            for historical reference but can omit content and may
+            require additional authentication for legal use.
+          </p>
+
+          <p>
+            WITNESS materials were developed for preserving human-rights
+            video, but many principles concerning original files,
+            metadata, context, and storage are also useful for
+            responsible public-interest documentation.
+          </p>
+
+          <p>
+            Always consider local law, platform rules, personal safety,
+            animal safety, privacy, and the wishes of directly affected owners.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-section" id="updates">
+        <h2>Archive Updates</h2>
+
+        <div class="case-timeline">
+          <article class="timeline-event">
+            <span class="timeline-date">26 July 2026</span>
+
+            <h3>Public participation guide created</h3>
+
+            <p>
+              Added documentation, preservation, privacy,
+              responsible sharing, reporting, donation,
+              anti-harassment, and source-verification guidance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <div class="case-footer-navigation">
+    <a href="advocacy-resources.html">
+      ← Previous: Organizations &amp; Resources
+    </a>
+
+    <a href="index.html#petitions">
+      Back to Advocacy →
+    </a>
+  </div>
+
+  <footer>
+    Voices For Animals CN · Independent documentation archive
+  </footer>
+
+</body>
+</html>
